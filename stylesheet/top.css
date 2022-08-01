@@ -1,0 +1,54 @@
+/*ヘッダー画像*/
+
+header h1{
+    position: relative;
+    z-index: 5;
+}
+header h1 .icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: auto;
+}
+.mainvisual{
+    position: relative;
+}
+.mainvisual_logo{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+    margin: auto;
+}
+
+
+
+@media screen and (min-width: 961px) {
+    .mainvisual_pc{
+        display: block;
+        width: 100%;
+        height: auto;
+        
+    }
+    
+
+    .mainvisual_sp{
+        display: none;
+    }
+}
+@media screen and (max-width: 960px) {
+    .mainvisual_pc{
+        display: none;
+    }
+    
+    .mainvisual_sp{
+        display: block;
+        width: 100%;
+        height: auto;
+    }
+    
+}
+
+@media screen and (max-width: 520px) {
+    
+}
