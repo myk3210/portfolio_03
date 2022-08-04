@@ -13,30 +13,229 @@ header h1 .icon{
 .mainvisual{
     position: relative;
 }
-.mainvisual_logo{
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translateY(-50%) translateX(-50%);
-    margin: auto;
-}
 
 
 
 @media screen and (min-width: 961px) {
+    /*PCmainvisual*/
     .mainvisual_pc{
         display: block;
         width: 100%;
         height: auto;
-        
+        z-index: 0;
     }
-    
-
     .mainvisual_sp{
         display: none;
     }
+    .mainvisual_logo{
+        position: absolute;
+        top: 40%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: auto;
+        width: 20%;
+    }
+    .mainvisual_message{
+        width: 30%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .whiteline{
+        width: 100%;
+        height: 10vh;
+        background-image: url(../image/White_line_sp_2x.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        top: 86%;
+        left: 0;
+        z-index: 0;
+    }
+    /*PCtopintro*/
+    .topintro{
+        position: relative;
+        width: 100%;
+        height: 73vh;
+    }
+    .background_white{
+        width: 100%;
+        height: 73vh;
+        background-image: url(../image/White_back_sp.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .spoon_spice{
+        width: 40%;
+        position: absolute;
+        top: 2%;
+        left: 12%;
+        z-index: 1;
+    }
+    .topintro_catch{
+        width: 20%;
+        position: absolute;
+        top: 10vh;
+        left: 54vw;
+    }
+    .topintro_read{
+        width: 40%;
+        position: absolute;
+        top: 29%;
+        left: 54%;
+        background-color: aqua;
+        font-size:clamp(1rem, -0.239rem + 2.06vw, 3.2rem);
+        line-height: 2em;
+    }
+    .redline{
+        width: 100%;
+        height: 10%;
+        background-image: url(../image/red_line_sp.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    
+    /*PCspice_effect*/
+    .spice_effect{
+        position: relative;
+        width: 100%;
+        height: 150vh;
+    }
+    .background_red{
+        width: 100%;
+        height: 150vh;
+        background-image: url(../image/red_back.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .chili_icon_white{
+        width: 10%;
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .headline{
+        position: absolute;
+        top: 14%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        font-size: clamp(2rem, 0.873rem + 1.88vw, 4rem);
+    }
+    .spices{
+        width: 26%;
+        position: absolute;
+        top: 29%;
+        left: 0;
+    }
+    .spices2{
+        width: 26%;
+        position: absolute;
+        top: 29%;
+        right: 0;
+    }
+    .balloon1{
+        width: 30%;
+        position: absolute;
+        top: 23%;
+        left: 20%;
+    }
+    .balloon2_pc{
+        width: 30%;
+        position: absolute;
+        top: 38%;
+        left: 52%;
+    }
+    .balloon2_sp{
+        display: none;
+    }
+    .balloon3{
+        width: 30%;
+        position: absolute;
+        top: 53%;
+        left: 20%;
+    }
+    .balloon4_pc{
+        width: 30%;
+        position: absolute;
+        top: 67%;
+        left: 52%;
+    }
+    .balloon4_sp{
+        display: none;
+    }
+    .balloon1_text{
+        width: 20%;
+        position: absolute;
+        top: 25%;
+        left: 27%;
+    }
+    .balloon2_text{
+        width: 20%;
+        position: absolute;
+        top: 40%;
+        left: 55%;
+    }
+    .balloon3_text{
+        width: 20%;
+        position: absolute;
+        top: 55%;
+        left: 27%;
+    }
+    .balloon4_text{
+        width: 20%;
+        position: absolute;
+        top: 69%;
+        left: 55%;
+    }
+    .balloon_title{
+        background-color: blue;
+        text-align: center;
+        font-size: clamp(1.2rem, 0.468rem + 1.22vw, 2.5rem);
+        font-weight: bold;
+    }
+    .balloon_writing{
+        background-color: violet;
+        text-align: center;
+        font-size: clamp(1rem, 0.437rem + 0.94vw, 2rem);
+    }
+    .button_chili{
+        width: 33%;
+        position: absolute;
+        top: 89%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .button_chili p{
+        color: #fff;
+        font-size: clamp(1.5rem, 0.937rem + 0.94vw, 2.5rem);
+        text-align: center;
+    }
+    .button_chili img{
+        width: 70%;
+    }
+    /*
+    .button_chili_img{
+        text-align: right;
+    }
+    */
 }
 @media screen and (max-width: 960px) {
+    /*SPmainvisual*/
     .mainvisual_pc{
         display: none;
     }
@@ -46,7 +245,208 @@ header h1 .icon{
         width: 100%;
         height: auto;
     }
+    .mainvisual_logo{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: auto;
+        width: 55%;
+    }
     
+    .mainvisual_message{
+        width: 66%;
+        position: absolute;
+        top: 75%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+    }
+    .whiteline{
+        width: 100%;
+        height: 16%;
+        background-image: url(../image/White_line_sp_2x.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        top: 88%;
+        left: 0;
+        z-index: 0;
+    }
+    /*SPtopintro*/
+    .topintro{
+        position: relative;
+        width: 100%;
+        height: 100vh;
+    }
+    .background_white{
+        width: 100%;
+        height: 100vh;
+        background-image: url(../image/White_back_sp.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .spoon_spice{
+        width: 82%;
+        position: absolute;
+        top: 22%;
+        left: 12%;
+        z-index: 1;
+    }
+    .topintro_catch{
+        width: 65%;
+        position: absolute;
+        top: 0;
+        left: 5%;
+    }
+    .topintro_read{
+        width: 86%;
+        position: absolute;
+        top: 5%;
+        left: 6%;
+        background-color: aqua;
+        font-size:clamp(1rem, 0.1rem + 4vw, 2.5rem);
+        line-height: 2em;
+    }
+    .redline{
+        width: 100%;
+        height: 10%;
+        background-image: url(../image/red_line_sp.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
+    /*SPspice_effect*/
+    .spice_effect{
+        position: relative;
+        width: 100%;
+        height: 160vh;
+    }
+    .background_red{
+        width: 100%;
+        height: 160vh;
+        background-image: url(../image/red_back.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .chili_icon_white{
+        width: 16%;
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .headline{
+        position: absolute;
+        top: 9%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        font-size: clamp(2rem, 0.8rem + 5.33vw, 4rem);
+    }
+    .spices{
+        width: 40%;
+        position: absolute;
+        top: 29%;
+        left: 0;
+    }
+    .spices2{
+        width: 40%;
+        position: absolute;
+        top: 27%;
+        right: 0;
+    }
+    .balloon1{
+        width: 89%;
+        position: absolute;
+        top: 16%;
+        left: 4%;
+    }
+    .balloon2_pc{
+        display: none;
+    }
+    .balloon2_sp{
+        width: 89%;
+        position: absolute;
+        top: 33%;
+        left: 4%;
+        
+    }
+    .balloon3{
+        width: 89%;
+        position: absolute;
+        top: 50%;
+        left: 4%;
+    }
+    .balloon4_pc{
+        display: none;
+    }
+    .balloon4_sp{
+        width: 89%;
+        position: absolute;
+        top: 67%;
+        left: 4%;
+    }
+    .balloon1_text{
+        width: 65%;
+        position: absolute;
+        top: 18%;
+        left: 21%;
+    }
+    .balloon2_text{
+        width: 65%;
+        position: absolute;
+        top: 35%;
+        left: 21%;
+    }
+    .balloon3_text{
+        width: 65%;
+        position: absolute;
+        top: 52%;
+        left: 21%;
+    }
+    .balloon4_text{
+        width: 65%;
+        position: absolute;
+        top: 69%;
+        left: 21%;
+    }
+    .balloon_title{
+        background-color: blue;
+        text-align: center;
+        font-size: clamp(1.4rem, 0.62rem + 3.47vw, 2.7rem);
+        font-weight: bold;
+    }
+    .balloon_writing{
+        background-color: violet;
+        text-align: center;
+        font-size: clamp(1rem, 0.28rem + 3.2vw, 2.2rem);
+    }
+    .button_chili{
+        width: 63%;
+        position: absolute;
+        top: 87%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .button_chili p{
+        color: #fff;
+        font-size: clamp(1.3rem, 0.7rem + 2.67vw, 2.3rem);
+        text-align: center;
+    }
+    .button_chili img{
+        width: 70%;
+    }
 }
 
 @media screen and (max-width: 520px) {
