@@ -58,7 +58,7 @@ header h1 .icon{
         width: 100%;
         height: 73vh;
     }
-    .background_white{
+    .background_white_topintro{
         width: 100%;
         height: 73vh;
         background-image: url(../image/White_back_sp.png);
@@ -101,16 +101,27 @@ header h1 .icon{
         bottom: 0;
         z-index: 1;
     }
+    .redline2{
+        width: 100%;
+        height: 10%;
+        background-image: url(../image/red_line_sp_02.png);
+        background-repeat: repeat-x;
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: 0;
+        z-index: 1;
+    }
     
     /*PCspice_effect*/
     .spice_effect{
         position: relative;
         width: 100%;
-        height: 150vh;
+        height: 170vh;
     }
-    .background_red{
+    .background_red_spice_effect{
         width: 100%;
-        height: 150vh;
+        height: 170vh;
         background-image: url(../image/red_back.png);
         position: absolute;
         top: 0;
@@ -126,7 +137,7 @@ header h1 .icon{
         right: 0;
         margin: auto;
     }
-    .headline{
+    .headline_white{
         position: absolute;
         top: 14%;
         left: 0;
@@ -214,13 +225,16 @@ header h1 .icon{
     }
     .button_chili{
         width: 33%;
-        position: absolute;
-        top: 89%;
-        left: 0;
-        right: 0;
+        
         margin: auto;
     }
-    .button_chili p{
+    .button_chili_01{
+        position: absolute;
+        top: 84%;
+        left: 0;
+        right: 0;
+    }
+    .button_chili .white_letters{
         color: #fff;
         font-size: clamp(1.5rem, 0.937rem + 0.94vw, 2.5rem);
         text-align: center;
@@ -233,6 +247,292 @@ header h1 .icon{
         text-align: right;
     }
     */
+
+
+    /*PCrecipe*/
+    .recipe{
+        position: relative;
+        width: 100%;
+        height: 220vh;
+    }
+    .background_white_recipe{
+        width: 100%;
+        height: 220vh;
+        background-image: url(../image/White_back_sp.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .chili_icon{
+        width: 10%;
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .comment{
+        width: 10%;
+        position: absolute;
+        top: 9%;
+        left: 31%;
+    }
+    .headline_red{
+        position: absolute;
+        top: 14%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #E02828;
+        font-size: clamp(2rem, 0.873rem + 1.88vw, 4rem);
+    }
+    .green_herb1{
+        width: 14%;
+        position: absolute;
+        top: 11%;
+        left: 5%;
+    }
+    .green_herb2{
+        width: 14%;
+        position: absolute;
+        top: 40%;
+        left: 83%;
+    }
+    .green_herb3{
+        width: 14%;
+        position: absolute;
+        top: 70%;
+        left: 10%;
+    }
+    .recipe1_shadow{
+        width: 25%;
+        position: absolute;
+        top: 22%;
+        left: 19%;
+    }
+    .recipe2_shadow{
+        width: 25%;
+        position: absolute;
+        top: 22%;
+        left: 61%;
+    }
+    .recipe3_shadow{
+        width: 25%;
+        position: absolute;
+        top: 54%;
+        left: 41%;
+    }
+    .recipe1{
+        width: 21%;
+        position: absolute;
+        top: 22%;
+        left: 19%;
+        border-radius: 50%;
+    }
+    .recipe2{
+        width: 21%;
+        position: absolute;
+        top: 22%;
+        left: 61%;
+        border-radius: 50%;
+    }
+    .recipe3{
+        width: 21%;
+        position: absolute;
+        top: 54%;
+        left: 41%;
+        border-radius: 50%;
+    }
+    .button_recipe{
+        width: 25%;
+        height: clamp(7rem, 2.198rem + 8vw, 15rem);
+        
+        text-align: center;
+    }
+    .button_title{
+        font-size: clamp(1.5rem, 0.6rem + 1.5vw, 3rem);
+        font-weight: bold;
+        margin: clamp(0.5rem, -1.001rem + 2.5vw, 3rem);
+    }
+    .button_recipe a{
+        display: inline-block;
+        width: 70%;
+        height: 42%;
+        background: #EFE036; 
+        color: #E02828;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+    .button01 p{
+        font-size: clamp(1rem, 0.4rem + 1vw, 2rem);
+        margin: clamp(0.8rem, 0.02rem + 1.3vw, 2.1rem);
+    }
+    .button_recipe_01{
+        position: absolute;
+        top: 42%;
+        left: 19%;
+    }
+    .button_recipe_02{
+        position: absolute;
+        top: 42%;
+        left: 61%;
+    }
+    .button_recipe_03{
+        position: absolute;
+        top: 74%;
+        left: 41%;
+    }
+    .button_chili_02{
+        position: absolute;
+        top: 89%;
+        left: 0;
+        right: 0;
+    }
+    .button_chili .red_letters{
+        color: #E02828;
+        font-size: clamp(1.5rem, 0.937rem + 0.94vw, 2.5rem);
+        text-align: center;
+    }
+    /*PCcolumn*/
+    .column{
+        position: relative;
+        width: 100%;
+        height: 200vh;
+    }
+    .background_red_column{
+        width: 100%;
+        height: 200vh;
+        background-image: url(../image/red_back.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .column_list{
+        list-style-type: none;
+    }
+    .column_design{
+        width: 33%;
+        height: 26%;
+        position: relative;
+    }
+    .column_triangle{
+        position: absolute;
+        top: 67%;
+        left: 92%;
+        border-right: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent;
+        border-bottom: clamp(1.038rem, 0.287rem + 1.25vw, 2.288rem) solid #b2ce54;
+        border-left: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent; 
+        transform:rotate(90deg);
+        z-index: 2;
+    }
+    .column_design_info{
+        width: 100%;
+        height: 23%;
+        display: flex;
+        background-color: bisque;
+    }
+    .column_design_date{
+        width: 15%;
+        height: 100%;
+        margin: 0;
+        display: table;
+        background-color: #EFE036;
+        padding: 0;
+        position: relative;
+    }
+    
+    .column_design_date p{
+        color: #E02828;
+        font-size: clamp(0.8rem, 0.38rem + 0.7vw, 1.5rem);
+        line-height: 1.7;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%)translateX(-50%);
+        -webkit-transform: translateY(-50%)translateX(-50%);        
+    }
+    .column_design_text{
+        width: 85%;
+        font-size: clamp(1rem, 0.4rem + 1vw, 2rem);
+        padding: 2%;
+        line-height: 1.3;
+    }
+    .column_01{
+        position: absolute;
+        top: 20%;
+        left: 11%;
+        background-color: aqua;
+    }
+    .column_img_01{
+        width: 100%;
+        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
+        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .column_02{
+        position: absolute;
+        top: 20%;
+        left: 54%;
+        background-color: aqua;
+    }
+    .column_img_02{
+        width: 100%;
+        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
+        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .column_03{
+        position: absolute;
+        top: 52%;
+        left: 11%;
+        background-color: aqua;
+    }
+    .column_img_03{
+        width: 100%;
+        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
+        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .column_04{
+        position: absolute;
+        top: 52%;
+        left: 54%;
+        background-color: aqua;
+    }
+    .column_img_04{
+        width: 100%;
+        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
+        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .button_chili_03{
+        position: absolute;
+        top: 84%;
+        left: 0;
+        right: 0;
+    }
+
+
+
+
+    
+
+
 }
 @media screen and (max-width: 960px) {
     /*SPmainvisual*/
@@ -275,11 +575,11 @@ header h1 .icon{
     .topintro{
         position: relative;
         width: 100%;
-        height: 100vh;
+        height: 170vh;
     }
-    .background_white{
+    .background_white_topintro{
         width: 100%;
-        height: 100vh;
+        height: 170vh;
         background-image: url(../image/White_back_sp.png);
         position: absolute;
         top: 0;
@@ -324,11 +624,11 @@ header h1 .icon{
     .spice_effect{
         position: relative;
         width: 100%;
-        height: 160vh;
+        height: 330vh;
     }
-    .background_red{
+    .background_red_spice_effect{
         width: 100%;
-        height: 160vh;
+        height: 330vh;
         background-image: url(../image/red_back.png);
         position: absolute;
         top: 0;
@@ -336,13 +636,22 @@ header h1 .icon{
         background-repeat: repeat;
         z-index: 0;
     }
-    .chili_icon_white{
+    .chili_icon{
         width: 16%;
         position: absolute;
         top: 2%;
         left: 0;
         right: 0;
         margin: auto;
+    }
+    .headline_white{
+        position: absolute;
+        top: 8%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #fff;
+        font-size: clamp(2rem, 0.8rem + 5.33vw, 4rem);
     }
     .headline{
         position: absolute;
@@ -431,7 +740,8 @@ header h1 .icon{
         text-align: center;
         font-size: clamp(1rem, 0.28rem + 3.2vw, 2.2rem);
     }
-    .button_chili{
+    
+    .button_chili_01{
         width: 63%;
         position: absolute;
         top: 87%;
@@ -446,6 +756,291 @@ header h1 .icon{
     }
     .button_chili img{
         width: 70%;
+
+    }
+    /*SPrecipe*/
+    .recipe{
+        position: relative;
+        width: 100%;
+        height: 600vh;
+    }
+    .background_white_recipe{
+        width: 100%;
+        height: 600vh;
+        background-image: url(../image/White_back_sp.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .chili_icon_red{
+        width: 10%;
+        position: absolute;
+        top: 2%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .comment{
+        width: 22%;
+        position: absolute;
+        top: 3%;
+        left: 8%;
+    }
+    .headline_red{
+        position: absolute;
+        top: 6%;
+        left: 0;
+        right: 0;
+        text-align: center;
+        color: #E02828;
+        font-size: clamp(2rem, 0.8rem + 5.33vw, 4rem);
+    }
+    /*
+    .green_herb1{
+        width: 30%;
+        position: absolute;
+        top: 20%;
+        left:-10%;
+    }
+    .green_herb2{
+        width: 30%;
+        position: absolute;
+        top: 40%;
+        left: 80%;
+    }
+    .green_herb3{
+        width: 30%;
+        position: absolute;
+        top: 60%;
+        left: -10%;
+    }
+    */
+    .recipe1_shadow{
+        width: 75%;
+        position: absolute;
+        top: 11%;
+        left: 17%;
+    }
+    .recipe2_shadow{
+        width: 75%;
+        position: absolute;
+        top: 39%;
+        left: 17%;
+    }
+    .recipe3_shadow{
+        width: 75%;
+        position: absolute;
+        top: 66%;
+        left: 17%;
+    }
+    .recipe1{
+        width: 65%;
+        position: absolute;
+        top: 11%;
+        left: 17%;
+        border-radius: 50%;
+    }
+    .recipe2{
+        width: 65%;
+        position: absolute;
+        top: 39%;
+        left: 17%;
+        border-radius: 50%;
+    }
+    .recipe3{
+        width: 65%;
+        position: absolute;
+        top: 66%;
+        left: 17%;
+        border-radius: 50%;
+    }
+    .button_recipe{
+        width: 83%;
+        height: clamp(10rem, 8.8rem + 5.33vw, 12rem);
+        
+        text-align: center;
+    }
+    .button_title{
+        font-size: clamp(1.5rem, 1.3rem + 1.33vw, 2rem);
+        font-weight: bold;
+        margin: 2rem;
+    }
+    .button_recipe a{
+        display: inline-block;
+        width: 70%;
+        height: 42%;
+        background: #EFE036; 
+        color: #E02828;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+    .button01 p{
+        font-size: clamp(1.2rem, 0.72rem + 2.13vw, 2rem);
+        margin: 1.4rem;
+    }
+    .button_recipe_01{
+        position: absolute;
+        top: 31%;
+        left: 9%;
+    }
+    .button_recipe_02{
+        position: absolute;
+        top: 59%;
+        left: 9%;
+    }
+    .button_recipe_03{
+        position: absolute;
+        top: 86%;
+        left: 9%;
+    }
+    .button_chili_02{
+        width: 63%;
+        position: absolute;
+        top: 95%;
+        left: 0;
+        right: 0;
+        margin: auto;
+    }
+    .button_chili .red_letters{
+        color: #E02828;
+        font-size: clamp(1.5rem, 0.937rem + 0.94vw, 2.5rem);
+        text-align: center;
+    }
+    /*SPcolumn*/
+    .column{
+        position: relative;
+        width: 100%;
+        height: 550vh;
+    }
+    .background_red_column{
+        width: 100%;
+        height: 550vh;
+        background-image: url(../image/red_back.png);
+        position: absolute;
+        top: 0;
+        left: 0;
+        background-repeat: repeat;
+        z-index: 0;
+    }
+    .column_list{
+        list-style-type: none;
+    }
+    .column_design{
+        width: 77%;
+        height: 15%;
+        position: relative;
+    }
+    .column_triangle{
+        position: absolute;
+        top: 67%;
+        left: 95%;
+        border-right: 15px solid transparent;
+        border-bottom: 24.6025px solid #b2ce54;
+        border-left: 15px solid transparent; 
+        transform:rotate(90deg);
+        z-index: 2;
+    }
+    .column_design_info{
+        width: 100%;
+        height: 22%;
+        display: flex;
+        background-color: bisque;
+        margin-top: 2%;
+    }
+    .column_design_date{
+        width: 15%;
+        height: 100%;
+        margin: 0;
+        display: table;
+        background-color: #EFE036;
+        padding: 0;
+        position: relative;
+    }
+    
+    .column_design_date p{
+        color: #E02828;
+        font-size: 1.5rem;
+        line-height: 1.7;
+        text-align: center;
+        vertical-align: middle;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translateY(-50%)translateX(-50%);
+        -webkit-transform: translateY(-50%)translateX(-50%);        
+    }
+    .column_design_text{
+        width: 85%;
+        font-size: 1.7rem;
+        padding: 2%;
+        line-height: 1.3;
+    }
+    .column_01{
+        position: absolute;
+        top: 14%;
+        left: 11%;
+        background-color: aqua;
+    }
+    .column_img_01{
+        width: 100%;
+        height: 75%;
+        background: linear-gradient(135deg, transparent 0%, transparent 45rem, #E02828 45rem), url(../image/blog1.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .column_02{
+        position: absolute;
+        top: 32%;
+        left: 11%;
+        background-color: aqua;
+    }
+    .column_img_02{
+        width: 100%;
+        height: 75%;
+        background: linear-gradient(135deg, transparent 0%, transparent 45rem, #E02828 45rem), url(../image/blog2.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .column_03{
+        position: absolute;
+        top: 50%;
+        left: 11%;
+        background-color: aqua;
+    }
+    .column_img_03{
+        width: 100%;
+        height: 75%;
+        background: linear-gradient(135deg, transparent 0%, transparent 45rem, #E02828 45rem), url(../image/blog3.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .column_04{
+        position: absolute;
+        top: 68%;
+        left: 11%;
+        background-color: aqua;
+    }
+    .column_img_04{
+        width: 100%;
+        height: 75%;
+        background: linear-gradient(135deg, transparent 0%, transparent 45rem, #E02828 45rem), url(../image/blog4.jpg);
+        background-repeat: no-repeat;
+        background-size: 100%;
+        border-top-left-radius: 30px;
+    }
+    .button_chili_03{
+        width: 63%;
+        position: absolute;
+        top: 92%;
+        left: 0;
+        right: 0;
+        margin: auto;
     }
 }
 
