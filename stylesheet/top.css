@@ -481,6 +481,7 @@ header h1 .icon{
         height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
         background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
         background: -webkit-linear-gradient(315deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
+        background: -webkit-gradient(315deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-top-left-radius: 30px;
