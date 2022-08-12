@@ -95,10 +95,13 @@ header h1 .icon{
         height: 10%;
         background-image: url(../image/red_line_sp.png);
         background-repeat: repeat-x;
+        
+    }
+    .redline_01{
         position: absolute;
         top: auto;
         left: 0;
-        bottom: 0;
+        bottom: -1%;
         z-index: 1;
     }
     .redline2{
@@ -106,11 +109,7 @@ header h1 .icon{
         height: 10%;
         background-image: url(../image/red_line_sp_02.png);
         background-repeat: repeat-x;
-        position: absolute;
-        top: auto;
-        left: 0;
-        bottom: 0;
-        z-index: 1;
+        
     }
     
     /*PCspice_effect*/
@@ -396,6 +395,13 @@ header h1 .icon{
         font-size: clamp(1.5rem, 0.937rem + 0.94vw, 2.5rem);
         text-align: center;
     }
+    .redline_02{
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: -6%;
+        z-index: 1;
+    }
     /*PCcolumn*/
     .column{
         position: relative;
@@ -474,6 +480,7 @@ header h1 .icon{
         width: 100%;
         height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
         background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
+        background: -webkit-linear-gradient(315deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
         background-repeat: no-repeat;
         background-size: 100%;
         border-top-left-radius: 30px;
@@ -524,13 +531,62 @@ header h1 .icon{
         position: absolute;
         top: 84%;
         left: 0;
-        right: 0;
+        right: 0;        
+    }
+    .redline_03{
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: -8%;
+        z-index: 1;
+    }
+    /*PCfooter*/
+    .footer{
+        position: relative;
+    }
+    .footer_pc{
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+    .footer_sp{
+        display: none;
+    }
+    .footer .text_01{
+        position: absolute;
+        top: 28%;
+        left: 50%;
+        font-size: 1.5rem;
+        color: #E02828;
+    }
+    .twi{
+        position: absolute;
+        top: 40%;
+        left: 47%;
+    }
+    .insta{
+        position: absolute;
+        top: 40%;
+        left: 53%;
     }
 
 
 
-
-    
+    .box{
+        padding: 10px;
+        width: 570px;
+        height: 470px;
+        margin-bottom: 30px;
+    }
+    .test{
+        position: absolute;
+        top: 85%;
+        left: 5%;
+        width: 40%;
+        height: 20vh;
+        background-color: #b2ce54;
+    }
 
 
 }
@@ -1041,6 +1097,56 @@ header h1 .icon{
         left: 0;
         right: 0;
         margin: auto;
+    }
+    .redline2{
+        width: 100%;
+        height: 10%;
+        background-image: url(../image/red_line_sp_02.png);
+        background-repeat: repeat-x;
+        
+    }
+    .redline_03{
+        position: absolute;
+        top: auto;
+        left: 0;
+        bottom: -9%;
+        z-index: 1;
+    }
+    
+    /*SPfooter*/
+    .footer{
+        position: relative;
+    }
+    .footer_pc{
+        display: none;
+    }
+    .footer_sp{
+        display: block;
+        width: 100%;
+        height: auto;
+        z-index: 0;
+    }
+    .footer .text_01{
+        position: absolute;
+        top: 18%;
+        left: 50%;
+        transform: translateY(-50%) translateX(-50%);
+        margin: auto;
+        font-size: 3.5rem;
+        color: #E02828;
+        z-index: 1;
+    }
+    .twi{
+        width: 18%;
+        position: absolute;
+        top: 28%;
+        left: 23%;
+    }
+    .insta{
+        width: 18%;
+        position: absolute;
+        top: 28%;
+        left: 60%;
     }
 }
 
