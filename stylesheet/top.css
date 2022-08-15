@@ -399,7 +399,7 @@ header h1 .icon{
         position: absolute;
         top: auto;
         left: 0;
-        bottom: -6%;
+        bottom: -7%;
         z-index: 1;
     }
     /*PCcolumn*/
@@ -574,22 +574,6 @@ header h1 .icon{
 
 
 
-    .box{
-        padding: 10px;
-        width: 570px;
-        height: 470px;
-        margin-bottom: 30px;
-    }
-    .test{
-        position: absolute;
-        top: 85%;
-        left: 5%;
-        width: 40%;
-        height: 20vh;
-        background-color: #b2ce54;
-    }
-
-
 }
 @media screen and (max-width: 960px) {
     /*SPmainvisual*/
@@ -674,7 +658,7 @@ header h1 .icon{
         position: absolute;
         top: auto;
         left: 0;
-        bottom: 0;
+        bottom: -9%;
         z-index: 1;
     }
     /*SPspice_effect*/
