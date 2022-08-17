@@ -433,13 +433,20 @@ header h1 .icon{
     }
     .column_design{
         width: 33%;
-        height: 26%;
+        height: 20%;
         position: relative;
+    }
+    .column_design img{
+        width: 100%;
+        height: 69%;
+        object-fit: cover;
+        border-top-left-radius: 30px;
+        clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
     }
     .column_triangle{
         position: absolute;
-        top: 67%;
-        left: 92%;
+        top: 60%;
+        left: 93%;
         border-right: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent;
         border-bottom: clamp(1.038rem, 0.287rem + 1.25vw, 2.288rem) solid #b2ce54;
         border-left: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent; 
@@ -448,9 +455,10 @@ header h1 .icon{
     }
     .column_design_info{
         width: 100%;
-        height: 23%;
+        height: 24%;
         display: flex;
         background-color: bisque;
+        margin-top: 4%;
     }
     .column_design_date{
         width: 15%;
@@ -477,8 +485,9 @@ header h1 .icon{
     .column_design_text{
         width: 85%;
         font-size: clamp(1rem, 0.4rem + 1vw, 2rem);
-        padding: 2%;
+        padding: 0 2%;
         line-height: 1.3;
+        color: #fff;
     }
     .column_01{
         position: absolute;
@@ -486,58 +495,29 @@ header h1 .icon{
         left: 11%;
         background-color: aqua;
     }
-    .column_img_01{
-        width: 100%;
-        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
-        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
-        background: -webkit-linear-gradient(315deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
-        background: -webkit-gradient(315deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-top-left-radius: 30px;
-    }
+    
+    
     .column_02{
         position: absolute;
         top: 20%;
         left: 54%;
         background-color: aqua;
     }
-    .column_img_02{
-        width: 100%;
-        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
-        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog2.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-top-left-radius: 30px;
-    }
+    
     .column_03{
         position: absolute;
         top: 52%;
         left: 11%;
         background-color: aqua;
     }
-    .column_img_03{
-        width: 100%;
-        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
-        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog3.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-top-left-radius: 30px;
-    }
+    
     .column_04{
         position: absolute;
         top: 52%;
         left: 54%;
         background-color: aqua;
     }
-    .column_img_04{
-        width: 100%;
-        height: clamp(11rem, 0.196rem + 17.99vw, 29rem);
-        background: linear-gradient(135deg, transparent 0%, transparent clamp(19rem, -0.208rem + 31.98vw, 51rem), #E02828 clamp(19rem, -0.208rem + 31.98vw, 51rem)), url(../image/blog4.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-top-left-radius: 30px;
-    }
+    
     .button_chili_03{
         position: absolute;
         top: 84%;
@@ -1007,8 +987,15 @@ header h1 .icon{
     }
     .column_design{
         width: 77%;
-        height: 15%;
+        height: 11%;
         position: relative;
+    }
+    .column_design img{
+        width: 100%;
+        height: 41%;
+        object-fit: cover;
+        border-top-left-radius: 30px;
+        clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
     }
     .column_triangle{
         position: absolute;
@@ -1061,14 +1048,7 @@ header h1 .icon{
         left: 11%;
         background-color: aqua;
     }
-    .column_img_01{
-        width: 100%;
-        height: 75%;
-        background: linear-gradient(135deg, transparent 0%, transparent 45rem, #E02828 45rem), url(../image/blog1.jpg);
-        background-repeat: no-repeat;
-        background-size: 100%;
-        border-top-left-radius: 30px;
-    }
+    
     .column_02{
         position: absolute;
         top: 32%;
