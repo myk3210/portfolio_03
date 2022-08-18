@@ -52,18 +52,18 @@ header h1 .icon{
         position: absolute;
         top: auto;
         left: 0;
-        bottom: -4%;
+        bottom: -4rem;
         z-index: 0;
     }
     /*PCtopintro*/
     .topintro{
         position: relative;
         width: 100%;
-        height: 73vh;
+        height: clamp(29rem, 2.995rem + 43.3vw, 73rem);
     }
     .background_white_topintro{
         width: 100%;
-        height: 73vh;
+        height: clamp(29rem, 2.995rem + 43.3vw, 73rem);
         background-image: url(../image/White_back.jpg);
         position: absolute;
         top: 0;
@@ -81,16 +81,16 @@ header h1 .icon{
     .topintro_catch{
         width: 20%;
         position: absolute;
-        top: 10vh;
-        left: 54vw;
+        top: 17%;
+        left: 54%;
     }
     .topintro_read{
         width: 40%;
         position: absolute;
-        top: 29%;
+        top: 38%;
         left: 54%;
         background-color: aqua;
-        font-size:clamp(1rem, -0.239rem + 2.06vw, 3.2rem);
+        font-size:clamp(1rem, 0.409rem + 0.98vw, 2rem);
         line-height: 2em;
     }
     .redline{
@@ -104,7 +104,7 @@ header h1 .icon{
         position: absolute;
         top: auto;
         left: 0;
-        bottom: -5%;
+        bottom: -5rem;
         z-index: 1;
     }
     .redline2{
@@ -594,7 +594,7 @@ header h1 .icon{
     }
     .whiteline{
         width: 100%;
-        height: 18vh;
+        height: clamp(7rem, -0.051rem + 30.09vw, 18rem);
         background-image: url(../image/White_line_sp_2x.png);
         background-repeat: repeat-x;
         background-size: cover;
@@ -602,20 +602,19 @@ header h1 .icon{
     .whiteline_01{
         position: absolute;
         top: auto;
-        bottom: 0;
         left: 0;
-        bottom: -1%;
+        bottom: -4rem;
         z-index: 0;
     }
     /*SPtopintro*/
     .topintro{
         position: relative;
         width: 100%;
-        height: 170vh;
+        height: clamp(60rem, 21.538rem + 164.1vw, 120rem);
     }
     .background_white_topintro{
         width: 100%;
-        height: 170vh;
+        height: clamp(60rem, 21.538rem + 164.1vw, 120rem);
         background-image: url(../image/White_back.jpg);
         position: absolute;
         top: 0;
@@ -627,20 +626,20 @@ header h1 .icon{
     .spoon_spice{
         width: 82%;
         position: absolute;
-        top: 22%;
+        top: 47%;
         left: 12%;
         z-index: 1;
     }
     .topintro_catch{
         width: 65%;
         position: absolute;
-        top: 0;
+        top: clamp(2rem, 3.282rem + -5.47vw, 0rem);
         left: 5%;
     }
     .topintro_read{
         width: 86%;
         position: absolute;
-        top: 5%;
+        top: 16%;
         left: 6%;
         background-color: aqua;
         font-size:clamp(1rem, 0.1rem + 4vw, 2.5rem);
