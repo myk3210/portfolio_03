@@ -419,11 +419,11 @@ header h1 .icon{
     .column{
         position: relative;
         width: 100%;
-        height: 200vh;
+        height: clamp(82rem, 11.61rem + 117.19vw, 200rem);
     }
     .background_red_column{
         width: 100%;
-        height: 200vh;
+        height: clamp(82rem, 11.61rem + 117.19vw, 200rem);
         background-image: url(../image/red_back.jpg);
         position: absolute;
         top: 0;
@@ -451,7 +451,7 @@ header h1 .icon{
         top: 60%;
         left: 93%;
         border-right: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent;
-        border-bottom: clamp(1.038rem, 0.287rem + 1.25vw, 2.288rem) solid #b2ce54;
+        border-bottom: clamp(1.038rem, 0.287rem + 1.25vw, 2.288rem) solid #fff;
         border-left: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent; 
         transform:rotate(90deg);
         z-index: 2;
@@ -464,7 +464,7 @@ header h1 .icon{
         margin-top: 4%;
     }
     .column_design_date{
-        width: 15%;
+        width: clamp(3.7rem, 0.538rem + 5.26vw, 9rem);
         height: 100%;
         margin: 0;
         display: table;
@@ -531,7 +531,7 @@ header h1 .icon{
         position: absolute;
         top: auto;
         left: 0;
-        bottom: -3%;
+        bottom: -5rem;
         z-index: 1;
     }
     /*PCfooter*/
