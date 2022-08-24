@@ -973,11 +973,11 @@ header h1 .icon{
     .column{
         position: relative;
         width: 100%;
-        height: 550vh;
+        height: clamp(100rem, 28rem + 320vw, 220rem);
     }
     .background_red_column{
         width: 100%;
-        height: 550vh;
+        height: clamp(100rem, 28rem + 320vw, 220rem);
         background-image: url(../image/red_back.jpg);
         position: absolute;
         top: 0;
@@ -991,35 +991,35 @@ header h1 .icon{
     }
     .column_design{
         width: 77%;
-        height: 11%;
+        height: clamp(13rem, 3.4rem + 42.67vw, 29rem);
         position: relative;
     }
     .column_design img{
         width: 100%;
-        height: 41%;
+        height: clamp(8rem, 0.8rem + 32vw, 20rem);
         object-fit: cover;
-        border-top-left-radius: 30px;
+        border-top-left-radius: clamp(3.75rem, 2.513rem + 5.5vw, 5.813rem);
         clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
     }
     .column_triangle{
         position: absolute;
-        top: 67%;
-        left: 95%;
-        border-right: 15px solid transparent;
-        border-bottom: 24.6025px solid #b2ce54;
-        border-left: 15px solid transparent; 
+        top: clamp(6.8rem, 0.68rem + 27.2vw, 17rem);
+        left: clamp(16rem, -0.5rem + 73.33vw, 43.5rem);
+        border-right: clamp(0.625rem, 0.25rem + 1.67vw, 1.25rem) solid transparent;
+        border-bottom: clamp(1.163rem, 0.638rem + 2.33vw, 2.038rem) solid #fff;
+        border-left: clamp(0.625rem, 0.25rem + 1.67vw, 1.25rem) solid transparent; 
         transform:rotate(90deg);
         z-index: 2;
     }
     .column_design_info{
         width: 100%;
-        height: 22%;
+        height: clamp(4.5rem, 3rem + 6.67vw, 7rem);
         display: flex;
         background-color: bisque;
         margin-top: 2%;
     }
     .column_design_date{
-        width: 15%;
+        width: clamp(4.6rem, 3.16rem + 6.4vw, 7rem);
         height: 100%;
         margin: 0;
         display: table;
@@ -1030,7 +1030,7 @@ header h1 .icon{
     
     .column_design_date p{
         color: #E02828;
-        font-size: 1.5rem;
+        font-size: clamp(0.8rem, 0.38rem + 1.87vw, 1.5rem);
         line-height: 1.7;
         text-align: center;
         vertical-align: middle;
@@ -1042,7 +1042,7 @@ header h1 .icon{
     }
     .column_design_text{
         width: 85%;
-        font-size: 1.7rem;
+        font-size: clamp(1rem, 0.58rem + 1.87vw, 1.7rem);
         padding: 2%;
         line-height: 1.3;
     }
@@ -1098,14 +1098,15 @@ header h1 .icon{
     .button_chili_03{
         width: 63%;
         position: absolute;
-        top: 92%;
+        top: 90%;
         left: 0;
         right: 0;
         margin: auto;
+        z-index: 2;
     }
     .redline2{
         width: 100%;
-        height: 19vh;
+        height: clamp(7rem, 0.4rem + 29.33vw, 18rem);
         background-image: url(../image/red_line_sp_02.png);
         background-repeat: repeat-x;
         background-size: cover;
@@ -1137,7 +1138,7 @@ header h1 .icon{
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         margin: auto;
-        font-size: 3.5rem;
+        font-size: clamp(2.5rem, 1.9rem + 2.67vw, 3.5rem);
         color: #E02828;
         z-index: 1;
     }
