@@ -1,5 +1,4 @@
 /*ヘッダー画像*/
-
 header h1{
     position: relative;
     z-index: 5;
@@ -13,10 +12,55 @@ header h1 .icon{
 .mainvisual{
     position: relative;
 }
-
-
-
+/*メニュー*/
+header{
+    position: relative;
+}
+a{
+    color: #fff;
+}
+.icon_menu li{
+    font-size: clamp(1.4rem, 0.858rem + 0.9vw, 2.4rem);
+}
+nav{
+    background: #45E545;
+    position: absolute;
+    top: 0;
+    right: 0;
+    overflow-x: hidden;
+    text-align: center;
+    z-index: 1;
+    font-size: 2rem;
+    width: 0;
+    height: clamp(53rem, 32.957rem + 33.37vw, 90rem);
+}
+nav.open-menu {
+    width: clamp(25rem, 16.874rem + 13.53vw, 40rem);
+  }
+.icon_menu ul{
+    margin-top: clamp(2rem, -1.25rem + 5.41vw, 8rem);
+    margin-bottom: clamp(10rem, 2.208rem + 6.31vw, 13rem);
+}
+.menu_text{
+    font-size: clamp(1.5rem, 1.229rem + 0.45vw, 2rem);
+    color: #E02828;
+    margin: 2rem 0;
+}
+.icon_menu li a{
+    display: block;
+    height: 100%;
+    width: 100%;
+    padding: clamp(2rem, 0.917rem + 1.8vw, 4rem) 0;
+    text-decoration: none;
+}
 @media screen and (min-width: 961px) {
+    /*メニュー*/
+    .twi_menu{
+        margin: 0 clamp(2rem, 1.458rem + 0.9vw, 3rem) 0 3rem;
+    }
+    .insta_menu{
+        margin: 0 3rem 0 clamp(2rem, 1.458rem + 0.9vw, 3rem);
+    }
     /*PCmainvisual*/
     .mainvisual_pc{
         display: block;
@@ -608,6 +652,37 @@ header h1 .icon{
         left: 0;
         bottom: -4rem;
         z-index: 0;
+    }
+    /*メニュー*/
+    nav{
+        height: clamp(40rem, 10rem + 133.33vw, 90rem);
+    }
+    nav.open-menu {
+        width: clamp(22.5rem, 9.6rem + 57.33vw, 44rem);
+      }
+    .icon_menu li{
+        font-size: clamp(1.5rem, 1.2rem + 1.33vw, 2rem);
+    }
+    .icon_menu li a{
+        display: block;
+        height: 100%;
+        width: 100%;
+        padding: clamp(1.2rem, 0.12rem + 4.8vw, 3rem) 0;
+    }
+    .icon_menu ul{
+        margin-top: clamp(3rem, 13.33vw, 8rem);
+        margin-bottom: clamp(7rem, -0.8rem + 34.67vw, 20rem);
+    }
+    .twi_menu{
+        margin: 0 clamp(1rem, -0.2rem + 5.33vw, 3rem) 0 clamp(1rem, -0.2rem + 5.33vw, 3rem);
+    }
+    .insta_menu{
+        margin: 0 clamp(1rem, -0.2rem + 5.33vw, 3rem) 0 clamp(1rem, -0.2rem + 5.33vw, 3rem);
+    }
+    .menu_text{
+        font-size: clamp(1.5rem, 1.2rem + 1.33vw, 2rem);
+        color: #E02828;
+        margin: clamp(1rem, -0.8rem + 8vw, 4rem) 0;
     }
     /*SPtopintro*/
     .topintro{
