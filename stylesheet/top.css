@@ -3,12 +3,27 @@ header h1{
     position: relative;
     z-index: 5;
 }
-header h1 .icon{
+/*メニューアイコンここから*/
+header .icon{
     position: absolute;
     top: 20px;
     right: 20px;
     margin: auto;
+    z-index: 3;
+    fill: #45e545;
 }
+
+
+.open_menu_icon{
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    margin: auto;
+    z-index: 3;
+    fill: #fff;
+}
+
+/*メニューアイコンここまで*/
 .mainvisual{
     position: relative;
 }
