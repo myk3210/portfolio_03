@@ -5,6 +5,8 @@ header h1{
 }
 /*メニューアイコンここから*/
 header .icon{
+    width: clamp(3rem, 0.833rem + 3.61vw, 7rem);
+    height: auto;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -15,6 +17,8 @@ header .icon{
 
 
 .open_menu_icon{
+    width: clamp(3rem, 0.833rem + 3.61vw, 7rem);
+    height: auto;
     position: absolute;
     top: 20px;
     right: 20px;
@@ -628,6 +632,19 @@ nav.open-menu {
 
 }
 @media screen and (max-width: 960px) {
+    /*メニューアイコンここから*/
+    header .icon{
+        width: clamp(3rem, 1rem + 10vw, 7rem);
+        height: auto;
+        top: clamp(0.625rem, 3.13vw, 1.875rem);
+        right: clamp(0.625rem, 3.13vw, 1.875rem);
+    }
+    .open_menu_icon{
+        width: clamp(3rem, 1rem + 10vw, 7rem);
+        height: auto;
+        top: clamp(0.625rem, 3.13vw, 1.875rem);
+        right: clamp(0.625rem, 3.13vw, 1.875rem);
+    }
     /*SPmainvisual*/
     .mainvisual_pc{
         display: none;
