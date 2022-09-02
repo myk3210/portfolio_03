@@ -4,9 +4,7 @@ body{
     "Hiragino Kaku Gothic ProN",
     "Hiragino Sans",
     "Meiryo",
-
     sans-serif;
-    
 }
 /*ヘッダー画像*/
 header h1{
@@ -24,8 +22,6 @@ header .icon{
     z-index: 3;
     fill: #45e545;
 }
-
-
 .open_menu_icon{
     width: clamp(3rem, 0.833rem + 3.61vw, 7rem);
     height: auto;
@@ -36,7 +32,6 @@ header .icon{
     z-index: 3;
     fill: #fff;
 }
-
 /*メニューアイコンここまで*/
 .mainvisual{
     position: relative;
@@ -173,7 +168,6 @@ nav.open-menu {
         height: 10vh;
         background-image: url(../image/red_line.png);
         background-repeat: repeat-x;
-        
     }
     .redline_01{
         position: absolute;
@@ -182,8 +176,6 @@ nav.open-menu {
         bottom: 0;
         z-index: 1;
     }
-    
-    
     /*PCspice_effect*/
     .spice_effect{
         position: relative;
@@ -296,7 +288,6 @@ nav.open-menu {
     }
     .button_chili{
         width: 33%;
-        
         margin: auto;
     }
     .button_chili_01{
@@ -313,6 +304,13 @@ nav.open-menu {
     .button_chili img{
         width: 70%;
     }
+    .button_chili img:hover{
+        margin-left: 7rem;
+        transition: .5s;
+    }
+    .button_chili_img{
+        padding-right: 0;
+    }
     .whiteline_02{
         position: absolute;
         top: auto;
@@ -320,13 +318,6 @@ nav.open-menu {
         bottom: 0;
         z-index: 0;
     }
-    /*
-    .button_chili_img{
-        text-align: right;
-    }
-    */
-
-
     /*PCrecipe*/
     .recipe{
         position: relative;
@@ -427,7 +418,6 @@ nav.open-menu {
     .button_recipe{
         width: 25%;
         height: clamp(7rem, 2.198rem + 8vw, 15rem);
-        
         text-align: center;
     }
     .button_title{
@@ -538,7 +528,6 @@ nav.open-menu {
         padding: 0;
         position: relative;
     }
-    
     .column_design_date p{
         color: #E02828;
         font-size: clamp(0.8rem, 0.15rem + 1.08vw, 2rem);
@@ -563,26 +552,21 @@ nav.open-menu {
         top: 20%;
         left: 11%;
     }
-    
-    
     .column_02{
         position: absolute;
         top: 20%;
         left: 54%;
     }
-    
     .column_03{
         position: absolute;
         top: 52%;
         left: 11%;
     }
-    
     .column_04{
         position: absolute;
         top: 52%;
         left: 54%;
     }
-    
     .button_chili_03{
         position: absolute;
         top: 84%;
@@ -597,8 +581,6 @@ nav.open-menu {
         z-index: 1;
         transform: rotate(180deg);
     }
-    
-
     /*PCfooter*/
     .footer{
         position: relative;
@@ -629,9 +611,6 @@ nav.open-menu {
         top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
         left: clamp(36.5rem, 7.27rem + 48.67vw, 85.5rem);
     }
-
-
-
 }
 @media screen and (max-width: 960px) {
     /*メニューアイコンここから*/
@@ -651,7 +630,6 @@ nav.open-menu {
     .mainvisual_pc{
         display: none;
     }
-    
     .mainvisual_sp{
         display: block;
         width: 100%;
@@ -665,7 +643,6 @@ nav.open-menu {
         margin: auto;
         width: 55%;
     }
-    
     .mainvisual_message{
         width: 66%;
         position: absolute;
@@ -840,7 +817,6 @@ nav.open-menu {
         position: absolute;
         top: 31%;
         left: 4%;
-        
     }
     .balloon3{
         width: 89%;
@@ -891,7 +867,6 @@ nav.open-menu {
         text-align: center;
         font-size: clamp(1rem, 0.28rem + 3.2vw, 2.2rem);
     }
-    
     .button_chili_01{
         width: 63%;
         position: absolute;
@@ -907,7 +882,6 @@ nav.open-menu {
     }
     .button_chili img{
         width: 70%;
-
     }
     .whiteline_02{
         position: absolute;
@@ -1019,7 +993,6 @@ nav.open-menu {
     .button_recipe{
         width: 83%;
         height: clamp(10rem, 8.8rem + 5.33vw, 12rem);
-        
         text-align: center;
     }
     .button_title{
@@ -1132,7 +1105,6 @@ nav.open-menu {
         padding: 0;
         position: relative;
     }
-    
     .column_design_date p{
         color: #E02828;
         font-size: clamp(0.8rem, 0.38rem + 1.87vw, 1.5rem);
@@ -1157,7 +1129,6 @@ nav.open-menu {
         top: 14%;
         left: 11%;
     }
-    
     .column_02{
         position: absolute;
         top: 32%;
@@ -1221,7 +1192,6 @@ nav.open-menu {
         z-index: 1;
         transform: rotate(180deg);
     }
-    
     /*SPfooter*/
     .footer{
         position: relative;
@@ -1258,7 +1228,5 @@ nav.open-menu {
         left: 60%;
     }
 }
-
 @media screen and (max-width: 520px) {
-    
 }
