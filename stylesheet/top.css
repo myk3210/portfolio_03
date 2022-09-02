@@ -1,3 +1,13 @@
+body{
+    font-family: "Helvetica Neue",
+    "Arial",
+    "Hiragino Kaku Gothic ProN",
+    "Hiragino Sans",
+    "Meiryo",
+
+    sans-serif;
+    
+}
 /*ヘッダー画像*/
 header h1{
     position: relative;
@@ -155,7 +165,6 @@ nav.open-menu {
         position: absolute;
         top: 38%;
         left: 54%;
-        background-color: aqua;
         font-size:clamp(1rem, 0.409rem + 0.98vw, 2rem);
         line-height: 2em;
     }
@@ -276,14 +285,12 @@ nav.open-menu {
         left: 54%;
     }
     .balloon_title{
-        background-color: blue;
         text-align: center;
         font-size: clamp(1.8rem, 1.084rem + 1.19vw, 3rem);
         font-weight: bold;
         margin-bottom: 5%;
     }
     .balloon_writing{
-        background-color: violet;
         text-align: center;
         font-size: clamp(1.2rem, 0.484rem + 1.19vw, 2.4rem);
     }
@@ -520,7 +527,6 @@ nav.open-menu {
         width: 100%;
         height: 24%;
         display: flex;
-        background-color: bisque;
         margin-top: 4%;
     }
     .column_design_date{
@@ -535,7 +541,7 @@ nav.open-menu {
     
     .column_design_date p{
         color: #E02828;
-        font-size: clamp(0.8rem, 0.38rem + 0.7vw, 1.5rem);
+        font-size: clamp(0.8rem, 0.15rem + 1.08vw, 2rem);
         line-height: 1.7;
         text-align: center;
         vertical-align: middle;
@@ -556,7 +562,6 @@ nav.open-menu {
         position: absolute;
         top: 20%;
         left: 11%;
-        background-color: aqua;
     }
     
     
@@ -564,21 +569,18 @@ nav.open-menu {
         position: absolute;
         top: 20%;
         left: 54%;
-        background-color: aqua;
     }
     
     .column_03{
         position: absolute;
         top: 52%;
         left: 11%;
-        background-color: aqua;
     }
     
     .column_04{
         position: absolute;
         top: 52%;
         left: 54%;
-        background-color: aqua;
     }
     
     .button_chili_03{
@@ -751,7 +753,6 @@ nav.open-menu {
         position: absolute;
         top: 16%;
         left: 6%;
-        background-color: aqua;
         font-size:clamp(1rem, 0.1rem + 4vw, 2.5rem);
         line-height: 2em;
     }
@@ -881,14 +882,12 @@ nav.open-menu {
         left: 21%;
     }
     .balloon_title{
-        background-color: blue;
         text-align: center;
         font-size: clamp(1.4rem, 0.62rem + 3.47vw, 2.7rem);
         font-weight: bold;
         margin-bottom: 5%;
     }
     .balloon_writing{
-        background-color: violet;
         text-align: center;
         font-size: clamp(1rem, 0.28rem + 3.2vw, 2.2rem);
     }
@@ -1122,7 +1121,6 @@ nav.open-menu {
         width: 100%;
         height: clamp(4.5rem, 3rem + 6.67vw, 7rem);
         display: flex;
-        background-color: bisque;
         margin-top: 2%;
     }
     .column_design_date{
@@ -1152,19 +1150,18 @@ nav.open-menu {
         font-size: clamp(1rem, 0.58rem + 1.87vw, 1.7rem);
         padding: 2%;
         line-height: 1.3;
+        color: #fff;
     }
     .column_01{
         position: absolute;
         top: 14%;
         left: 11%;
-        background-color: aqua;
     }
     
     .column_02{
         position: absolute;
         top: 32%;
         left: 11%;
-        background-color: aqua;
     }
     .column_img_02{
         width: 100%;
@@ -1178,7 +1175,6 @@ nav.open-menu {
         position: absolute;
         top: 50%;
         left: 11%;
-        background-color: aqua;
     }
     .column_img_03{
         width: 100%;
@@ -1192,7 +1188,6 @@ nav.open-menu {
         position: absolute;
         top: 68%;
         left: 11%;
-        background-color: aqua;
     }
     .column_img_04{
         width: 100%;
