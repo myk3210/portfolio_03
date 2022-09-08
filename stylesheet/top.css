@@ -46,7 +46,7 @@ a{
     white-space: nowrap;
 }
 .icon_menu li{
-    font-size: clamp(1.4rem, 0.858rem + 0.9vw, 2.4rem);
+    font-size: 1rem;
 }
 nav{
     background: #45E545;
@@ -66,10 +66,9 @@ nav.open-menu {
   }
 .icon_menu ul{
     margin-top: clamp(2rem, -1.25rem + 5.41vw, 8rem);
-    margin-bottom: clamp(10rem, 2.208rem + 6.31vw, 13rem);
 }
 .menu_text{
-    font-size: clamp(1.5rem, 1.229rem + 0.45vw, 2rem);
+    font-size: 1rem;
     color: #E02828;
     margin: 2rem 0;
 }
@@ -77,16 +76,22 @@ nav.open-menu {
     display: block;
     height: 100%;
     width: 100%;
-    padding: clamp(2rem, 0.917rem + 1.8vw, 4rem) 0;
+    padding: 2rem 0;
     text-decoration: none;
 }
 @media screen and (min-width: 961px) {
     /*メニュー*/
     .twi_menu{
-        margin: 0 clamp(2rem, 1.458rem + 0.9vw, 3rem) 0 3rem;
+        width: 3.5rem;
+        position: absolute;
+        top: clamp(34rem, 30.75rem + 5.41vw, 40rem);
+        left: clamp(7rem, 4.291rem + 4.51vw, 12rem);
     }
     .insta_menu{
-        margin: 0 3rem 0 clamp(2rem, 1.458rem + 0.9vw, 3rem);
+        width: 3.5rem;
+        position: absolute;
+        top: clamp(34rem, 30.75rem + 5.41vw, 40rem);
+        left: clamp(15rem, 10.125rem + 8.12vw, 24rem);
     }
     /*PCmainvisual*/
     .mainvisual_pc{
@@ -150,15 +155,19 @@ nav.open-menu {
         z-index: 1;
     }
     .topintro_catch{
-        width: 15%;
         position: absolute;
-        top: 17%;
+        top: 3%;
         left: 54%;
+        width: clamp(9rem, 8.458rem + 0.9vw, 10rem);
+        font-size: clamp(1.3rem, 1.192rem + 0.18vw, 1.5rem);
+        font-weight: bold;
+        color: #E02828;
+        line-height: 2rem;
     }
     .topintro_read{
         width: 32%;
         position: absolute;
-        top: 38%;
+        top: 30%;
         left: 54%;
         font-size:clamp(0.7rem, 0.537rem + 0.27vw, 1rem);
         line-height: 2em;
@@ -256,7 +265,7 @@ nav.open-menu {
         width: clamp(18rem, 16.375rem + 2.71vw, 21rem);
         position: absolute;
         top: 24%;
-        left: 34.5%;
+        left: clamp(21.5rem, 3.082rem + 30.67vw, 55.5rem);
     }
     .balloon2_text{
         width: clamp(17rem, 7.456rem + 15.89vw, 20rem);
@@ -274,11 +283,11 @@ nav.open-menu {
         width: clamp(18rem, 8.456rem + 15.89vw, 21rem);
         position: absolute;
         top: 68%;
-        left: clamp(33.5rem, 5.06rem + 47.35vw, 86rem);
+        left: clamp(33.5rem, 2.622rem + 51.41vw, 90.5rem);
     }
     .balloon_title{
         text-align: center;
-        font-size: clamp(1.8rem, 1.692rem + 0.18vw, 2rem);
+        font-size: clamp(1.2rem, 0.875rem + 0.54vw, 1.8rem);
         font-weight: bold;
         margin-bottom: 5%;
     }
@@ -422,7 +431,7 @@ nav.open-menu {
         text-align: center;
     }
     .button_title{
-        font-size: clamp(1.5rem, 0.6rem + 1.5vw, 3rem);
+        font-size: clamp(1.2rem, 0.767rem + 0.72vw, 2rem);
         font-weight: bold;
         margin: clamp(0.5rem, -1.001rem + 2.5vw, 3rem);
     }
@@ -497,7 +506,7 @@ nav.open-menu {
         list-style-type: none;
     }
     .column_design{
-        width: 33%;
+        width: clamp(22rem, 8.999rem + 21.65vw, 46rem);
         height: 20%;
         position: relative;
     }
@@ -515,6 +524,7 @@ nav.open-menu {
     }
     .column_design img:hover{
         transform: scale(1.2);
+        clip-path: polygon(100% 0, 100% 51%, 72% 100%, 0 100%, 0 0);
     }
     .column_triangle{
         position: absolute;
@@ -555,15 +565,15 @@ nav.open-menu {
     }
     .column_design_text{
         width: 85%;
-        font-size: clamp(1rem, 0.4rem + 1vw, 2rem);
+        font-size: clamp(0.9rem, 0.575rem + 0.54vw, 1.5rem);
         padding: 0 2%;
-        line-height: 1.3;
+        line-height: 1.9;
         color: #fff;
     }
     .column_01{
         position: absolute;
         top: 20%;
-        left: 11%;
+        left: clamp(6rem, -8.085rem + 23.45vw, 32rem);
     }
     .column_02{
         position: absolute;
@@ -573,7 +583,7 @@ nav.open-menu {
     .column_03{
         position: absolute;
         top: 52%;
-        left: 11%;
+        left: clamp(6rem, -8.085rem + 23.45vw, 32rem);
     }
     .column_04{
         position: absolute;
@@ -611,30 +621,32 @@ nav.open-menu {
         position: absolute;
         top: clamp(4rem, -0.772rem + 7.95vw, 12rem);
         left: clamp(32rem, 3.367rem + 47.67vw, 80rem);
-        font-size: 1.5rem;
+        font-size: 1rem;
         color: #E02828;
     }
     .twi{
         position: absolute;
         top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
-        left: clamp(28rem, -0.037rem + 46.68vw, 75rem);
+        left: clamp(29rem, 5.706rem + 38.78vw, 72rem);
+        width: 4%;
     }
     .insta{
         position: absolute;
         top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
         left: clamp(36.5rem, 7.27rem + 48.67vw, 85.5rem);
+        width: 4%;
     }
 }
 @media screen and (max-width: 960px) {
     /*メニューアイコンここから*/
     header .icon{
-        width: clamp(3rem, 1rem + 10vw, 7rem);
+        width: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
         height: auto;
         top: clamp(0.625rem, 3.13vw, 1.875rem);
         right: clamp(0.625rem, 3.13vw, 1.875rem);
     }
     .open_menu_icon{
-        width: clamp(3rem, 1rem + 10vw, 7rem);
+        width: clamp(2.5rem, 2rem + 2.5vw, 3.5rem);
         height: auto;
         top: clamp(0.625rem, 3.13vw, 1.875rem);
         right: clamp(0.625rem, 3.13vw, 1.875rem);
@@ -650,14 +662,14 @@ nav.open-menu {
     }
     .mainvisual_logo{
         position: absolute;
-        top: 50%;
+        top: 44%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         margin: auto;
-        width: 55%;
+        width: 37%;
     }
     .mainvisual_message{
-        width: 66%;
+        width: 50%;
         position: absolute;
         top: 75%;
         left: 50%;
@@ -678,45 +690,51 @@ nav.open-menu {
         z-index: 0;
     }
     /*メニュー*/
-    nav{
-        height: clamp(40rem, 10rem + 133.33vw, 90rem);
-    }
     nav.open-menu {
         width: clamp(22.5rem, 9.6rem + 57.33vw, 44rem);
+        height: 100%;
+        position: fixed;
       }
     .icon_menu li{
-        font-size: clamp(1.5rem, 1.2rem + 1.33vw, 2rem);
+        font-size: clamp(0.9rem, 0.75rem + 0.75vw, 1.2rem);
     }
     .icon_menu li a{
         display: block;
         height: 100%;
         width: 100%;
-        padding: clamp(1.2rem, 0.12rem + 4.8vw, 3rem) 0;
+        padding: 1.5rem 0;
     }
     .icon_menu ul{
         margin-top: clamp(3rem, 13.33vw, 8rem);
-        margin-bottom: clamp(7rem, -0.8rem + 34.67vw, 20rem);
     }
     .twi_menu{
-        margin: 0 clamp(1rem, -0.2rem + 5.33vw, 3rem) 0 clamp(1rem, -0.2rem + 5.33vw, 3rem);
+        position: absolute;
+        top: clamp(32.5rem, 31.75rem + 3.75vw, 34rem);
+        left: clamp(7.5rem, 3.5rem + 20vw, 15.5rem);
+        width: 3rem;
     }
     .insta_menu{
-        margin: 0 clamp(1rem, -0.2rem + 5.33vw, 3rem) 0 clamp(1rem, -0.2rem + 5.33vw, 3rem);
+        position: absolute;
+        top: clamp(32.5rem, 31.75rem + 3.75vw, 34rem);
+        left: clamp(14.5rem, 9.5rem + 25vw, 24.5rem);
+        width: 3rem;
     }
     .menu_text{
-        font-size: clamp(1.5rem, 1.2rem + 1.33vw, 2rem);
+        font-size: clamp(0.9rem, 0.75rem + 0.75vw, 1.2rem);
         color: #E02828;
-        margin: clamp(1rem, -0.8rem + 8vw, 4rem) 0;
+        position: absolute;
+        top: 29rem;
+        left: clamp(11rem, 7rem + 20vw, 19rem);
     }
     /*SPtopintro*/
     .topintro{
         position: relative;
         width: 100%;
-        height: clamp(48rem, 4.8rem + 192vw, 120rem);
+        height: clamp(50rem, 29rem + 93.33vw, 85rem);
     }
     .background_white_topintro{
         width: 100%;
-        height: clamp(48rem, 4.8rem + 192vw, 120rem);
+        height: clamp(50rem, 29rem + 93.33vw, 85rem);
         background-image: url(../image/White_back.jpg);
         position: absolute;
         top: 0;
@@ -728,22 +746,26 @@ nav.open-menu {
     .spoon_spice{
         width: 82%;
         position: absolute;
-        top: clamp(27rem, 7rem + 80vw, 55rem);
+        top: 29rem;
         left: 12%;
         z-index: 1;
     }
     .topintro_catch{
-        width: 65%;
         position: absolute;
-        top: clamp(2rem, 3.282rem + -5.47vw, 0rem);
-        left: 5%;
+        top: 3%;
+        left: 6%;
+        width: clamp(9rem, 6.5rem + 12.5vw, 14rem);
+        font-size: clamp(1.3rem, 0.88rem + 1.87vw, 2rem);
+        font-weight: bold;
+        color: #E02828;
+        line-height: clamp(2rem, 1.5rem + 2.5vw, 3rem);
     }
     .topintro_read{
         width: 86%;
         position: absolute;
         top: 16%;
         left: 6%;
-        font-size:clamp(1rem, 0.1rem + 4vw, 2.5rem);
+        font-size: clamp(1rem, 0.7rem + 1.33vw, 1.5rem);
         line-height: 2em;
     }
     .redline{
@@ -764,11 +786,11 @@ nav.open-menu {
     .spice_effect{
         position: relative;
         width: 100%;
-        height: clamp(70rem, -8rem + 346.67vw, 200rem);
+        height: clamp(60rem, 10rem + 250vw, 160rem);
     }
     .background_red_spice_effect{
         width: 100%;
-        height: clamp(70rem, -8rem + 346.67vw, 200rem);
+        height: clamp(60rem, 10rem + 250vw, 160rem);
         background-image: url(../image/red_back.jpg);
         position: absolute;
         top: 0;
@@ -793,7 +815,7 @@ nav.open-menu {
         right: 0;
         text-align: center;
         color: #fff;
-        font-size: clamp(2rem, 0.8rem + 5.33vw, 4rem);
+        font-size: clamp(1.3rem, 0.8rem + 5.33vw, 2.5rem);
     }
     .headline{
         position: absolute;
@@ -817,84 +839,89 @@ nav.open-menu {
         right: 0;
     }
     .balloon1{
-        width: 89%;
+        width: clamp(17rem, 7rem + 50vw, 37rem);
         position: absolute;
         top: 15%;
-        left: 4%;
+        left: clamp(2rem, -3.5rem + 27.5vw, 13rem);
     }
     .balloon2_pc{
         display: none;
     }
     .balloon2_sp{
-        width: 89%;
+        width: clamp(17rem, 7rem + 50vw, 37rem);
         position: absolute;
         top: 31%;
-        left: 4%;
+        left: clamp(2rem, -3.5rem + 27.5vw, 13rem);
     }
     .balloon3{
-        width: 89%;
+        width: clamp(17rem, 7rem + 50vw, 37rem);
         position: absolute;
         top: 48%;
-        left: 4%;
+        left: clamp(2rem, -3.5rem + 27.5vw, 13rem);
     }
     .balloon4_pc{
         display: none;
     }
     .balloon4_sp{
-        width: 89%;
+        width: clamp(17rem, 7rem + 50vw, 37rem);
         position: absolute;
         top: 65%;
-        left: 4%;
+        left: clamp(2rem, -3.5rem + 27.5vw, 13rem);
     }
     .balloon1_text{
-        width: 65%;
+        width: clamp(11rem, 2rem + 45vw, 29rem);
         position: absolute;
-        top: clamp(11.5rem, -2rem + 60vw, 34rem);
-        left: 21%;
+        top: clamp(10rem, 1.5rem + 42.5vw, 27rem);
+        left: 32%;
     }
     .balloon2_text{
-        width: 65%;
+        width: clamp(11rem, 2rem + 45vw, 29rem);
         position: absolute;
-        top: clamp(22.5rem, -3.6rem + 116vw, 66rem);
-        left: 21%;
+        top: clamp(19.5rem, 2.75rem + 83.75vw, 53rem);
+        left: 32%;
     }
     .balloon3_text{
-        width: 65%;
+        width: clamp(11rem, 2rem + 45vw, 29rem);
         position: absolute;
-        top: clamp(34.5rem, -5.4rem + 177.33vw, 101rem);
-        left: 21%;
+        top: clamp(30rem, 5rem + 125vw, 80rem);
+        left: 32%;
     }
     .balloon4_text{
-        width: 65%;
+        width: clamp(11rem, 2rem + 45vw, 29rem);
         position: absolute;
-        top: clamp(46rem, -6.2rem + 232vw, 133rem);
-        left: 21%;
+        top: clamp(39.5rem, 6rem + 167.5vw, 106.5rem);
+        left: 32%;
     }
     .balloon_title{
         text-align: center;
-        font-size: clamp(1.4rem, 0.62rem + 3.47vw, 2.7rem);
+        font-size: clamp(0.9rem, 0.5rem + 2vw, 1.7rem);
         font-weight: bold;
         margin-bottom: 5%;
     }
     .balloon_writing{
         text-align: center;
-        font-size: clamp(1rem, 0.28rem + 3.2vw, 2.2rem);
+        font-size: clamp(0.7rem, 0.45rem + 1.25vw, 1.2rem);
+        line-height: clamp(1rem, 0.5rem + 2.5vw, 2rem);
     }
     .button_chili_01{
-        width: 63%;
+        width: 38%;
         position: absolute;
-        top: clamp(58rem, -6.8rem + 288vw, 166rem);
+        top: clamp(49rem, 8.5rem + 202.5vw, 130rem);
         left: 0;
         right: 0;
         margin: auto;
     }
     .button_chili p{
         color: #fff;
-        font-size: clamp(1.3rem, 0.7rem + 2.67vw, 2.3rem);
+        font-size: clamp(0.9rem, 0.75rem + 0.75vw, 1.2rem);
         text-align: center;
     }
     .button_chili img{
         width: 70%;
+    }
+    .button_chili img:hover{
+        margin-left: 5rem;
+        transition: .5s;
     }
     .whiteline_02{
         position: absolute;
@@ -908,11 +935,11 @@ nav.open-menu {
     .recipe{
         position: relative;
         width: 100%;
-        height: clamp(132rem, 31.2rem + 448vw, 300rem);
+        height: clamp(65rem, 5rem + 300vw, 185rem);
     }
     .background_white_recipe{
         width: 100%;
-        height: clamp(132rem, 31.2rem + 448vw, 300rem);
+        height: clamp(65rem, 5rem + 300vw, 185rem);
         background-image: url(../image/White_back.jpg);
         position: absolute;
         top: 0;
@@ -932,17 +959,17 @@ nav.open-menu {
     .comment{
         width: 22%;
         position: absolute;
-        top: 3%;
+        top: clamp(0rem, -2.5rem + 12.5vw, 5rem);
         left: 8%;
     }
     .headline_red{
         position: absolute;
-        top: 6%;
+        top: clamp(3.5rem, -1.25rem + 23.75vw, 13rem);
         left: 0;
         right: 0;
         text-align: center;
         color: #E02828;
-        font-size: clamp(2rem, 0.8rem + 5.33vw, 4rem);
+        font-size: clamp(1.3rem, 0.8rem + 5.33vw, 2.5rem);
     }
     /*
     .green_herb1{
@@ -965,42 +992,42 @@ nav.open-menu {
     }
     */
     .recipe1_shadow{
-        width: 75%;
+        width: 47%;
         position: absolute;
         top: 11%;
-        left: 17%;
+        left: 29%;
     }
     .recipe2_shadow{
-        width: 75%;
+        width: 47%;
         position: absolute;
         top: 36%;
-        left: 17%;
+        left: 29%;
     }
     .recipe3_shadow{
-        width: 75%;
+        width: 47%;
         position: absolute;
         top: 62%;
-        left: 17%;
+        left: 29%;
     }
     .recipe1{
-        width: 65%;
+        width: 40%;
         position: absolute;
         top: 11%;
-        left: 17%;
+        left: 30%;
         border-radius: 50%;
     }
     .recipe2{
-        width: 65%;
+        width: 40%;
         position: absolute;
         top: 36%;
-        left: 17%;
+        left: 30%;
         border-radius: 50%;
     }
     .recipe3{
-        width: 65%;
+        width: 40%;
         position: absolute;
         top: 62%;
-        left: 17%;
+        left: 30%;
         border-radius: 50%;
     }
     .button_recipe{
@@ -1009,50 +1036,54 @@ nav.open-menu {
         text-align: center;
     }
     .button_title{
-        font-size: clamp(1.5rem, 1.3rem + 1.33vw, 2rem);
+        font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.1rem);
         font-weight: bold;
-        margin: 2rem;
+        margin: clamp(0.5rem, -0.25rem + 3.75vw, 2rem);
     }
     .button_recipe a{
         display: inline-block;
-        width: 70%;
-        height: 42%;
+        width: clamp(9rem, 6.5rem + 12.5vw, 14rem);
+        height: clamp(2.5rem, 1.75rem + 3.75vw, 4rem);
         background: #EFE036; 
         color: #E02828;
         font-weight: bold;
         text-decoration: none;
         border-radius: 50px;
     }
+    .button_recipe a:hover{
+        background-color: #E02828;
+        color: #EFE036;
+    }
     .button01 p{
-        font-size: clamp(1.2rem, 0.72rem + 2.13vw, 2rem);
-        margin: 1.4rem;
+        font-size: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
+        margin: clamp(0.9rem, 0.65rem + 1.25vw, 1.4rem);
     }
     .button_recipe_01{
         position: absolute;
-        top: clamp(30rem, 0.6rem + 130.67vw, 79rem);
+        top: clamp(16rem, 80vw, 48rem);
         left: 9%;
     }
     .button_recipe_02{
         position: absolute;
-        top: clamp(63rem, 8.4rem + 242.67vw, 154rem);
+        top: clamp(32rem, 0.5rem + 157.5vw, 95rem);
         left: 9%;
     }
     .button_recipe_03{
         position: absolute;
-        top: clamp(98rem, 18.2rem + 354.67vw, 231rem);
+        top: clamp(48rem, 0.5rem + 237.5vw, 143rem);
         left: 9%;
     }
     .button_chili_02{
-        width: 63%;
+        width: 38%;
         position: absolute;
-        top: 88%;
+        top: 86%;
         left: 0;
         right: 0;
         margin: auto;
     }
     .button_chili .red_letters{
         color: #E02828;
-        font-size: clamp(1rem, 0.1rem + 4vw, 2.5rem);
+        font-size: clamp(0.9rem, 0.75rem + 0.75vw, 1.2rem);
         text-align: center;
     }
     .redline_02{
@@ -1065,11 +1096,11 @@ nav.open-menu {
     .column{
         position: relative;
         width: 100%;
-        height: clamp(100rem, 28rem + 320vw, 220rem);
+        height: clamp(80rem, 45rem + 175vw, 150rem);
     }
     .background_red_column{
         width: 100%;
-        height: clamp(100rem, 28rem + 320vw, 220rem);
+        height: clamp(80rem, 45rem + 175vw, 150rem);
         background-image: url(../image/red_back.jpg);
         position: absolute;
         top: 0;
@@ -1082,35 +1113,43 @@ nav.open-menu {
         list-style-type: none;
     }
     .column_design{
-        width: 77%;
-        height: clamp(13rem, 3.4rem + 42.67vw, 29rem);
+        width: clamp(16rem, 11rem + 25vw, 26rem);
+        height: clamp(12rem, 7rem + 25vw, 22rem);
         position: relative;
     }
     .column_design img{
         width: 100%;
-        height: clamp(8rem, 0.8rem + 32vw, 20rem);
+        height: clamp(8rem, 6rem + 10vw, 12rem);
         object-fit: cover;
         border-top-left-radius: clamp(3.75rem, 2.513rem + 5.5vw, 5.813rem);
         clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
     }
+    .column_design img:hover{
+        transform: scale(1.2);
+        clip-path: polygon(100% 0, 100% 51%, 72% 100%, 0 100%, 0 0);
+    }
+    .column_design_imagebox{
+        overflow: hidden;
+        border-top-left-radius: clamp(3.75rem, 2.513rem + 5.5vw, 5.813rem);
+    }
     .column_triangle{
         position: absolute;
-        top: clamp(6.8rem, 0.68rem + 27.2vw, 17rem);
-        left: clamp(16rem, -0.5rem + 73.33vw, 43.5rem);
-        border-right: clamp(0.625rem, 0.25rem + 1.67vw, 1.25rem) solid transparent;
-        border-bottom: clamp(1.163rem, 0.638rem + 2.33vw, 2.038rem) solid #fff;
-        border-left: clamp(0.625rem, 0.25rem + 1.67vw, 1.25rem) solid transparent; 
+        top: clamp(7rem, 5.35rem + 8.25vw, 10.3rem);
+        left: clamp(14.7rem, 9.9rem + 24vw, 24.3rem);
+        border-right: clamp(0.4rem, 0.25rem + 0.75vw, 0.7rem) solid transparent;
+        border-bottom: clamp(0.7rem, 0.45rem + 1.25vw, 1.2rem) solid #fff;
+        border-left: clamp(0.4rem, 0.25rem + 0.75vw, 0.7rem) solid transparent; 
         transform:rotate(90deg);
         z-index: 2;
     }
     .column_design_info{
         width: 100%;
-        height: clamp(4.5rem, 3rem + 6.67vw, 7rem);
+        height: clamp(3.5rem, 2.5rem + 5vw, 5.5rem);
         display: flex;
         margin-top: 2%;
     }
     .column_design_date{
-        width: clamp(4.6rem, 3.16rem + 6.4vw, 7rem);
+        width: clamp(4rem, 3rem + 5vw, 6rem);
         height: 100%;
         margin: 0;
         display: table;
@@ -1120,7 +1159,7 @@ nav.open-menu {
     }
     .column_design_date p{
         color: #E02828;
-        font-size: clamp(0.8rem, 0.38rem + 1.87vw, 1.5rem);
+        font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem);
         line-height: 1.7;
         text-align: center;
         vertical-align: middle;
@@ -1132,20 +1171,20 @@ nav.open-menu {
     }
     .column_design_text{
         width: 85%;
-        font-size: clamp(1rem, 0.58rem + 1.87vw, 1.7rem);
+        font-size: clamp(0.8rem, 0.7rem + 0.5vw, 1rem);
         padding: 2%;
         line-height: 1.3;
         color: #fff;
     }
     .column_01{
         position: absolute;
-        top: 14%;
-        left: 11%;
+        top: 18%;
+        left: clamp(2rem, -5rem + 35vw, 16rem);
     }
     .column_02{
         position: absolute;
-        top: 32%;
-        left: 11%;
+        top: 35%;
+        left: clamp(2rem, -5rem + 35vw, 16rem);
     }
     .column_img_02{
         width: 100%;
@@ -1157,8 +1196,8 @@ nav.open-menu {
     }
     .column_03{
         position: absolute;
-        top: 50%;
-        left: 11%;
+        top: 52%;
+        left: clamp(2rem, -5rem + 35vw, 16rem);
     }
     .column_img_03{
         width: 100%;
@@ -1170,8 +1209,8 @@ nav.open-menu {
     }
     .column_04{
         position: absolute;
-        top: 68%;
-        left: 11%;
+        top: 69%;
+        left: clamp(2rem, -5rem + 35vw, 16rem);
     }
     .column_img_04{
         width: 100%;
@@ -1182,9 +1221,9 @@ nav.open-menu {
         border-top-left-radius: 30px;
     }
     .button_chili_03{
-        width: 63%;
+        width: 38%;
         position: absolute;
-        top: 90%;
+        top: 88%;
         left: 0;
         right: 0;
         margin: auto;
@@ -1220,25 +1259,25 @@ nav.open-menu {
     }
     .footer .text_01{
         position: absolute;
-        top: 18%;
+        top: 12%;
         left: 50%;
         transform: translateY(-50%) translateX(-50%);
         margin: auto;
-        font-size: clamp(2.5rem, 1.9rem + 2.67vw, 3.5rem);
+        font-size: clamp(1rem, 0.75rem + 1.25vw, 1.5rem);
         color: #E02828;
         z-index: 1;
     }
     .twi{
-        width: 18%;
+        width: 7%;
         position: absolute;
-        top: 28%;
-        left: 23%;
+        top: 18%;
+        left: 35%;
     }
     .insta{
-        width: 18%;
+        width: 7%;
         position: absolute;
-        top: 28%;
-        left: 60%;
+        top: 18%;
+        left: 58%;
     }
 }
 @media screen and (max-width: 520px) {
