@@ -43,10 +43,15 @@
     <main>
         
         <div class="mainvisual">
-            <img class="mainvisual_pc" src="./image/top_pcimg.png" alt="唐辛子メイン画像">
+            <picture class="mainvisual_image">
+                <source srcset="./image/top_pcimg.png" media="(min-width: 961px)"/>
+                <source srcset="./image/top_spimg.png" media="(max-width: 960px)"/>
+                <img src="./image/top_pcimg.png" alt="唐辛子メイン画像">
+            </picture>
+            
             <img class="mainvisual_logo" src="./image/logo_01.png" alt="サイトロゴ">
             <img class="mainvisual_message" src="./image/top_message@2x.png" alt="スパイスを食べて健康になろう！">
-            <img class="mainvisual_sp" src="./image/top_spimg.png" alt="唐辛子メイン画像">
+            
             <div class="whiteline whiteline_01"></div>
         </div>
         

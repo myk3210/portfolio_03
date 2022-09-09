@@ -7,6 +7,10 @@ body{
     sans-serif;
 }
 /*ヘッダー画像*/
+.mainvisual_image img{
+    max-width: 100%;
+    height: auto;
+}
 header h1{
     position: relative;
     z-index: 5;
@@ -94,15 +98,11 @@ nav.open-menu {
         left: clamp(15rem, 10.125rem + 8.12vw, 24rem);
     }
     /*PCmainvisual*/
-    .mainvisual_pc{
+    .mainvisual_image img{
         display: block;
         width: 100%;
-        height: auto;
-        z-index: 0;
     }
-    .mainvisual_sp{
-        display: none;
-    }
+    
     .mainvisual_logo{
         position: absolute;
         top: 40%;
@@ -652,13 +652,9 @@ nav.open-menu {
         right: clamp(0.625rem, 3.13vw, 1.875rem);
     }
     /*SPmainvisual*/
-    .mainvisual_pc{
-        display: none;
-    }
-    .mainvisual_sp{
+    .mainvisual_image img{
         display: block;
         width: 100%;
-        height: auto;
     }
     .mainvisual_logo{
         position: absolute;
