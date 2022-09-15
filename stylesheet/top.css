@@ -342,7 +342,7 @@ nav.open-menu {
         top: 0;
         left: 0;
         background-repeat: repeat;
-        z-index: 0;
+        z-index: -5;
     }
     .chili_icon{
         width: 10%;
@@ -371,7 +371,7 @@ nav.open-menu {
     .green_herb1{
         width: 14%;
         position: absolute;
-        top: 11%;
+        top: 8%;
         left: 5%;
     }
     .green_herb2{
@@ -386,24 +386,80 @@ nav.open-menu {
         top: 70%;
         left: 10%;
     }
-    .recipe1_shadow{
-        width: clamp(20rem, 8.07rem + 19.86vw, 40rem);
+    .block{
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
         position: absolute;
-        top: 22%;
-        left: clamp(7rem, -6.72rem + 22.84vw, 30rem);
+        top: clamp(17rem, -1.418rem + 30.67vw, 51rem);
     }
-    .recipe2_shadow{
-        width: clamp(20rem, 8.07rem + 19.86vw, 40rem);
+    .blocks{
+        margin: auto;
+        margin-top: 5rem;
+        width: 50%;
+        text-align: center;
+    }
+    .blocks_warp{
+        position: relative;
+    }
+    .blocks_warp::after{
+        content: '';
+        display: inline-block;
+        width: clamp(18.5rem, 9.02rem + 15.78vw, 36rem);
+        height: clamp(18.5rem, 9.02rem + 15.78vw, 36rem);
+        background-image: url(../image/img_shadow_2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
         position: absolute;
-        top: 22%;
-        left: 61%;
+        top: 1rem;
+        left: clamp(7rem, -4.876rem + 18.94vw, 27.5rem);
+        z-index: -1;
     }
-    .recipe3_shadow{
-        width: clamp(20rem, 8.07rem + 19.86vw, 40rem);
+    .recipe_image{
+        width: clamp(17rem, 6.859rem + 16.88vw, 34rem);
+        border-radius: 50%;
+    }
+    .button_recipe{
+        height: clamp(7rem, 2.198rem + 8vw, 15rem);
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .button_title{
+        font-size: clamp(1.2rem, 0.767rem + 0.72vw, 2rem);
+        font-weight: bold;
+        margin: clamp(1.5rem, -1.001rem + 2.5vw, 3rem);
+    }
+    .button_recipe a{
+        display: inline-block;
+        width: 30%;
+        height: 42%;
+        background: #EFE036; 
+        color: #E02828;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 50px;
+    }
+    .button_recipe a:hover{
+        background-color: #E02828;
+        color: #EFE036;
+    }
+    .button01 p{
+        font-size: clamp(1rem, 0.4rem + 1vw, 2rem);
+        margin: clamp(0.8rem, 0.02rem + 1.3vw, 2.1rem);
+    }
+    .button_chili_02{
         position: absolute;
-        top: clamp(52rem, 12.033rem + 66.54vw, 119rem);
-        left: clamp(23rem, -3.247rem + 43.7vw, 67rem);
+        top: clamp(85rem, 21.172rem + 106.27vw, 192rem);
+        left: 0;
+        right: 0;
     }
+    .button_chili .red_letters{
+        color: #E02828;
+        font-size: clamp(0.8rem, 0.637rem + 0.27vw, 1.1rem);
+        text-align: center;
+    }
+    /*
     .recipe1{
         width: clamp(17rem, 6.859rem + 16.88vw, 34rem);
         position: absolute;
@@ -425,6 +481,7 @@ nav.open-menu {
         left: clamp(23rem, -3.247rem + 43.7vw, 67rem);
         border-radius: 50%;
     }
+    
     .button_recipe{
         width: 25%;
         height: clamp(7rem, 2.198rem + 8vw, 15rem);
@@ -479,6 +536,7 @@ nav.open-menu {
         font-size: clamp(0.8rem, 0.637rem + 0.27vw, 1.1rem);
         text-align: center;
     }
+    */
     .redline_02{
         position: absolute;
         top: auto;
@@ -504,11 +562,26 @@ nav.open-menu {
     }
     .column_list{
         list-style-type: none;
+        display: flex;
+        flex-wrap: wrap;
+        width: 100%;
+        position: absolute;
+        top: clamp(17rem, -1.418rem + 30.67vw, 28rem);
     }
+    
     .column_design{
-        width: clamp(22rem, 8.999rem + 21.65vw, 46rem);
-        height: 20%;
+        width: 50%;
+        margin-top: clamp(5rem, -1.959rem + 9.92vw, 15rem);
+    }
+    .column_design .inner{
+        width: clamp(19rem, 3.29rem + 26.16vw, 48rem);
         position: relative;
+    }
+    .column_design .left{
+        margin-left: clamp(9rem, -0.751rem + 16.23vw, 27rem);
+    }
+    .column_design .right{
+        margin-left: clamp(2rem, -2.334rem + 7.22vw, 10rem);
     }
     .column_design_imagebox{
         width: 100%;
@@ -517,19 +590,20 @@ nav.open-menu {
         overflow: hidden;
     }
     .column_design img{
-        width: 100%;
-        height: 100%;
-        object-fit: cover;
-        clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
+        width: clamp(19rem, 3.29rem + 26.16vw, 48rem);
+        clip-path: polygon(100% 0, 100% 67%, 74% 100%, 0 100%, 0 0);
+        transition: all 0.3s;
+        
     }
     .column_design img:hover{
         transform: scale(1.2);
-        clip-path: polygon(100% 0, 100% 51%, 72% 100%, 0 100%, 0 0);
+        clip-path: polygon(100% 0, 100% 67%, 74% 100%, 0 100%, 0 0);
+        
     }
     .column_triangle{
         position: absolute;
-        top: 60%;
-        left: 93%;
+        top: clamp(12rem, 2.249rem + 16.23vw, 30rem);
+        left: clamp(17rem, 2.374rem + 24.35vw, 44rem);
         border-right: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent;
         border-bottom: clamp(1.038rem, 0.287rem + 1.25vw, 2.288rem) solid #fff;
         border-left: clamp(0.625rem, 0.137rem + 0.81vw, 1.438rem) solid transparent; 
@@ -538,30 +612,25 @@ nav.open-menu {
     }
     .column_design_info{
         width: 100%;
-        height: 24%;
+        height: clamp(4rem, 0.75rem + 5.41vw, 10rem);
         display: flex;
         margin-top: 4%;
     }
     .column_design_date{
-        width: clamp(3.7rem, 0.538rem + 5.26vw, 9rem);
+        width: 22%;
         height: 100%;
         margin: 0;
         display: table;
         background-color: #EFE036;
         padding: 0;
-        position: relative;
     }
     .column_design_date p{
+        margin-top: clamp(0.7rem, 0.267rem + 0.72vw, 1.5rem);
         color: #E02828;
         font-size: clamp(0.8rem, 0.15rem + 1.08vw, 2rem);
         line-height: 1.7;
         text-align: center;
-        vertical-align: middle;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        transform: translateY(-50%)translateX(-50%);
-        -webkit-transform: translateY(-50%)translateX(-50%);        
+        vertical-align: middle;       
     }
     .column_design_text{
         width: 85%;
@@ -570,16 +639,8 @@ nav.open-menu {
         line-height: 1.9;
         color: #fff;
     }
-    .column_01{
-        position: absolute;
-        top: 20%;
-        left: clamp(6rem, -8.085rem + 23.45vw, 32rem);
-    }
-    .column_02{
-        position: absolute;
-        top: 20%;
-        left: 54%;
-    }
+    
+    
     .column_03{
         position: absolute;
         top: 52%;
@@ -592,7 +653,7 @@ nav.open-menu {
     }
     .button_chili_03{
         position: absolute;
-        top: 84%;
+        top: clamp(73rem, 17.745rem + 92vw, 175rem);
         left: 0;
         right: 0;        
     }
@@ -627,13 +688,13 @@ nav.open-menu {
     .twi{
         position: absolute;
         top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
-        left: clamp(29rem, 5.706rem + 38.78vw, 72rem);
+        left: clamp(29rem, 6.06rem + 38.78vw, 72rem);
         width: 4%;
     }
     .insta{
         position: absolute;
         top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
-        left: clamp(36.5rem, 7.27rem + 48.67vw, 85.5rem);
+        left: clamp(36.5rem, 7.27rem + 48.67vw, 84.5rem);
         width: 4%;
     }
 }
@@ -750,7 +811,7 @@ nav.open-menu {
         position: absolute;
         top: 3%;
         left: 6%;
-        width: clamp(9rem, 6.5rem + 12.5vw, 14rem);
+        width: clamp(9rem, 6.5rem + 12.5vw, 13rem);
         font-size: clamp(1.3rem, 0.88rem + 1.87vw, 2rem);
         font-weight: bold;
         color: #E02828;
@@ -811,7 +872,7 @@ nav.open-menu {
         right: 0;
         text-align: center;
         color: #fff;
-        font-size: clamp(1.3rem, 0.8rem + 5.33vw, 2.5rem);
+        font-size: clamp(1.3rem, 0.7rem + 3vw, 2.5rem);
     }
     .headline{
         position: absolute;
@@ -931,17 +992,18 @@ nav.open-menu {
     .recipe{
         position: relative;
         width: 100%;
-        height: clamp(65rem, 5rem + 300vw, 185rem);
+        height: clamp(68rem, 5rem + 300vw, 179rem);
+        overflow: hidden;
     }
     .background_white_recipe{
         width: 100%;
-        height: clamp(65rem, 5rem + 300vw, 185rem);
+        height: clamp(68rem, 5rem + 300vw, 179rem);
         background-image: url(../image/White_back.jpg);
         position: absolute;
         top: 0;
         left: 0;
         background-repeat: repeat;
-        z-index: 0;
+        z-index: -5;
         background-size: clamp(5.313rem, 0.469rem + 24.22vw, 15rem);
     }
     .chili_icon_red{
@@ -965,9 +1027,8 @@ nav.open-menu {
         right: 0;
         text-align: center;
         color: #E02828;
-        font-size: clamp(1.3rem, 0.8rem + 5.33vw, 2.5rem);
+        font-size: clamp(1.3rem, 0.7rem + 3vw, 2.5rem);
     }
-    /*
     .green_herb1{
         width: 30%;
         position: absolute;
@@ -986,25 +1047,39 @@ nav.open-menu {
         top: 60%;
         left: -10%;
     }
-    */
-    .recipe1_shadow{
-        width: 47%;
+    .block{
+        width: 100%;
         position: absolute;
-        top: 11%;
-        left: 29%;
+        top: clamp(6rem, 30vw, 18rem);
     }
-    .recipe2_shadow{
-        width: 47%;
+    .blocks{
+        margin: auto;
+        margin-top: clamp(3rem, 2rem + 5vw, 5rem);
+        width: 50%;
+        text-align: center;
+    }
+    .blocks_warp{
+        position: relative;
+    }
+    .blocks_warp::after{
+        content: '';
+        display: inline-block;
+        width: clamp(8.5rem, 0.25rem + 41.25vw, 25rem);
+        height: clamp(8.5rem, 0.25rem + 41.25vw, 25rem);
+        background-image: url(../image/img_shadow_2x.png);
+        background-repeat: no-repeat;
+        background-size: contain;
+        vertical-align: middle;
         position: absolute;
-        top: 36%;
-        left: 29%;
+        top: clamp(0rem, -0.25rem + 1.25vw, 0.5rem);
+        left: clamp(1.5rem, 7.5vw, 4.5rem);
+        z-index: -1;
     }
-    .recipe3_shadow{
-        width: 47%;
-        position: absolute;
-        top: 62%;
-        left: 29%;
+    .recipe_image{
+        width: 79%;
+        border-radius: 50%;
     }
+
     .recipe1{
         width: 40%;
         position: absolute;
@@ -1027,14 +1102,13 @@ nav.open-menu {
         border-radius: 50%;
     }
     .button_recipe{
-        width: 83%;
-        height: clamp(10rem, 8.8rem + 5.33vw, 12rem);
+        height: clamp(4rem, 20vw, 12rem);
         text-align: center;
     }
     .button_title{
         font-size: clamp(0.9rem, 0.8rem + 0.5vw, 1.1rem);
         font-weight: bold;
-        margin: clamp(0.5rem, -0.25rem + 3.75vw, 2rem);
+        margin: clamp(1rem, -0.25rem + 3.75vw, 2rem) 0;
     }
     .button_recipe a{
         display: inline-block;
@@ -1054,21 +1128,7 @@ nav.open-menu {
         font-size: clamp(0.9rem, 0.85rem + 0.25vw, 1rem);
         margin: clamp(0.9rem, 0.65rem + 1.25vw, 1.4rem);
     }
-    .button_recipe_01{
-        position: absolute;
-        top: clamp(16rem, 80vw, 48rem);
-        left: 9%;
-    }
-    .button_recipe_02{
-        position: absolute;
-        top: clamp(32rem, 0.5rem + 157.5vw, 95rem);
-        left: 9%;
-    }
-    .button_recipe_03{
-        position: absolute;
-        top: clamp(48rem, 0.5rem + 237.5vw, 143rem);
-        left: 9%;
-    }
+    
     .button_chili_02{
         width: 38%;
         position: absolute;
@@ -1092,11 +1152,11 @@ nav.open-menu {
     .column{
         position: relative;
         width: 100%;
-        height: clamp(80rem, 45rem + 175vw, 150rem);
+        height: clamp(77rem, 44rem + 165vw, 143rem);
     }
     .background_red_column{
         width: 100%;
-        height: clamp(80rem, 45rem + 175vw, 150rem);
+        height: clamp(77rem, 44rem + 165vw, 143rem);
         background-image: url(../image/red_back.jpg);
         position: absolute;
         top: 0;
@@ -1107,11 +1167,18 @@ nav.open-menu {
     }
     .column_list{
         list-style-type: none;
+        width: 100%;
+        position: absolute;
+        top: clamp(7rem, -1rem + 40vw, 23rem);
     }
     .column_design{
         width: clamp(16rem, 11rem + 25vw, 26rem);
         height: clamp(12rem, 7rem + 25vw, 22rem);
         position: relative;
+        margin: 0 auto;
+    }
+    .column_design .inner{
+        margin-top: 3rem;
     }
     .column_design img{
         width: 100%;
@@ -1119,6 +1186,7 @@ nav.open-menu {
         object-fit: cover;
         border-top-left-radius: clamp(3.75rem, 2.513rem + 5.5vw, 5.813rem);
         clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
+        transition: all 0.3s;
     }
     .column_design img:hover{
         transform: scale(1.2);
@@ -1219,7 +1287,7 @@ nav.open-menu {
     .button_chili_03{
         width: 38%;
         position: absolute;
-        top: 88%;
+        top: clamp(71rem, 42.5rem + 142.5vw, 128rem);
         left: 0;
         right: 0;
         margin: auto;
