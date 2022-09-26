@@ -588,17 +588,15 @@ nav.open-menu {
         height: 69%;
         border-top-left-radius: 30px;
         overflow: hidden;
+        clip-path: polygon(100% 0, 100% 67%, 74% 100%, 0 100%, 0 0);
     }
     .column_design img{
         width: clamp(19rem, 3.29rem + 26.16vw, 48rem);
-        clip-path: polygon(100% 0, 100% 67%, 74% 100%, 0 100%, 0 0);
         transition: all 0.3s;
         
     }
     .column_design img:hover{
         transform: scale(1.2);
-        clip-path: polygon(100% 0, 100% 67%, 74% 100%, 0 100%, 0 0);
-        
     }
     .column_triangle{
         position: absolute;
@@ -1185,16 +1183,15 @@ nav.open-menu {
         height: clamp(8rem, 6rem + 10vw, 12rem);
         object-fit: cover;
         border-top-left-radius: clamp(3.75rem, 2.513rem + 5.5vw, 5.813rem);
-        clip-path: polygon(100% 0, 100% 69%, 82% 100%, 0 100%, 0 0);
         transition: all 0.3s;
     }
     .column_design img:hover{
         transform: scale(1.2);
-        clip-path: polygon(100% 0, 100% 51%, 72% 100%, 0 100%, 0 0);
     }
     .column_design_imagebox{
         overflow: hidden;
         border-top-left-radius: clamp(3.75rem, 2.513rem + 5.5vw, 5.813rem);
+        clip-path: polygon(100% 0, 100% 65%, 79% 100%, 0 100%, 0 0);
     }
     .column_triangle{
         position: absolute;
