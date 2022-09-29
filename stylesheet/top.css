@@ -97,6 +97,9 @@ nav.open-menu {
         top: clamp(34rem, 30.75rem + 5.41vw, 40rem);
         left: clamp(15rem, 10.125rem + 8.12vw, 24rem);
     }
+    .icon_menu .wrap{
+        background-color: aqua;
+    }
     /*PCmainvisual*/
     .mainvisual_image img{
         display: block;
@@ -216,7 +219,7 @@ nav.open-menu {
         right: 0;
         text-align: center;
         color: #fff;
-        font-size: clamp(2rem, 1.458rem + 0.9vw, 3rem);
+        font-size: clamp(1.3rem, 1.192rem + 0.18vw, 1.5rem);
     }
     .spices{
         width: clamp(25rem, 18.438rem + 10.92vw, 36rem);
@@ -287,13 +290,13 @@ nav.open-menu {
     }
     .balloon_title{
         text-align: center;
-        font-size: clamp(1.2rem, 0.875rem + 0.54vw, 1.8rem);
+        font-size: 1.1rem;
         font-weight: bold;
         margin-bottom: 5%;
     }
     .balloon_writing{
         text-align: center;
-        font-size: 1rem;
+        font-size: clamp(0.7rem, 0.537rem + 0.27vw, 1rem);
         line-height: 1.5rem;
     }
     .button_chili{
@@ -366,7 +369,7 @@ nav.open-menu {
         right: 0;
         text-align: center;
         color: #E02828;
-        font-size: clamp(2rem, 0.873rem + 1.88vw, 4rem);
+        font-size: clamp(1.3rem, 1.192rem + 0.18vw, 1.5rem);
     }
     .green_herb1{
         width: 14%;
@@ -426,7 +429,7 @@ nav.open-menu {
         margin-top: 2rem;
     }
     .button_title{
-        font-size: clamp(1.2rem, 0.767rem + 0.72vw, 2rem);
+        font-size: 1rem;
         font-weight: bold;
         margin: clamp(1.5rem, -1.001rem + 2.5vw, 3rem);
     }
@@ -445,7 +448,7 @@ nav.open-menu {
         color: #EFE036;
     }
     .button01 p{
-        font-size: clamp(1rem, 0.4rem + 1vw, 2rem);
+        font-size: 1rem;
         margin: clamp(0.8rem, 0.02rem + 1.3vw, 2.1rem);
     }
     .button_chili_02{
@@ -625,14 +628,14 @@ nav.open-menu {
     .column_design_date p{
         margin-top: clamp(0.7rem, 0.267rem + 0.72vw, 1.5rem);
         color: #E02828;
-        font-size: clamp(0.8rem, 0.15rem + 1.08vw, 2rem);
+        font-size: 1rem;
         line-height: 1.7;
         text-align: center;
         vertical-align: middle;       
     }
     .column_design_text{
         width: 85%;
-        font-size: clamp(0.9rem, 0.575rem + 0.54vw, 1.5rem);
+        font-size: 1rem;
         padding: 0 2%;
         line-height: 1.9;
         color: #fff;
@@ -677,24 +680,31 @@ nav.open-menu {
         display: none;
     }
     .footer .text_01{
-        position: absolute;
-        top: clamp(4rem, -0.772rem + 7.95vw, 12rem);
-        left: clamp(32rem, 3.367rem + 47.67vw, 80rem);
-        font-size: 1rem;
+        font-size: clamp(1.3rem, 1.192rem + 0.18vw, 1.5rem);
         color: #E02828;
     }
     .twi{
-        position: absolute;
-        top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
-        left: clamp(29rem, 6.06rem + 38.78vw, 72rem);
         width: 4%;
+        padding-right: 25%;
+        padding-top: 7%;
+        width: clamp(3rem, 1.917rem + 1.8vw, 5rem);
     }
     .insta{
-        position: absolute;
-        top: clamp(7rem, 1.631rem + 8.94vw, 16rem);
-        left: clamp(36.5rem, 7.27rem + 48.67vw, 84.5rem);
-        width: 4%;
+        width: clamp(3rem, 1.917rem + 1.8vw, 5rem);
+        padding-left: 25%;
+        padding-top: 7%;
     }
+    .footer .wrap{
+        position: absolute;
+        top: clamp(6rem, 3.833rem + 3.61vw, 10rem);
+        left: 0;
+        right: 0;
+        margin: auto;
+        width: clamp(13rem, 8.125rem + 8.12vw, 22rem);
+        height: clamp(6rem, 3.833rem + 3.61vw, 10rem);
+        text-align: center;
+    }
+    
 }
 @media screen and (max-width: 960px) {
     /*メニューアイコンここから*/
@@ -759,27 +769,25 @@ nav.open-menu {
         width: 100%;
         padding: 1.5rem 0;
     }
+    
     .icon_menu ul{
         margin-top: clamp(3rem, 13.33vw, 8rem);
     }
     .twi_menu{
-        position: absolute;
-        top: clamp(32.5rem, 31.75rem + 3.75vw, 34rem);
-        left: clamp(7.5rem, 3.5rem + 20vw, 15.5rem);
         width: 3rem;
+        position: absolute;
+        left: clamp(7rem, 2rem + 22.5vw, 16rem);
     }
     .insta_menu{
-        position: absolute;
-        top: clamp(32.5rem, 31.75rem + 3.75vw, 34rem);
-        left: clamp(14.5rem, 9.5rem + 25vw, 24.5rem);
         width: 3rem;
+        padding-left: clamp(1rem, 5vw, 3rem);
+        position: absolute;
+        left: clamp(12rem, 5rem + 30vw, 23rem);
     }
+    
     .menu_text{
         font-size: clamp(0.9rem, 0.75rem + 0.75vw, 1.2rem);
         color: #E02828;
-        position: absolute;
-        top: 29rem;
-        left: clamp(11rem, 7rem + 20vw, 19rem);
     }
     /*SPtopintro*/
     .topintro{
@@ -809,7 +817,7 @@ nav.open-menu {
         position: absolute;
         top: 3%;
         left: 6%;
-        width: clamp(9rem, 6.5rem + 12.5vw, 13rem);
+        width: clamp(8rem, 5.5rem + 12.5vw, 13rem);
         font-size: clamp(1.3rem, 0.88rem + 1.87vw, 2rem);
         font-weight: bold;
         color: #E02828;
@@ -1319,26 +1327,29 @@ nav.open-menu {
         z-index: 0;
     }
     .footer .text_01{
-        position: absolute;
-        top: 12%;
-        left: 50%;
-        transform: translateY(-50%) translateX(-50%);
         margin: auto;
-        font-size: clamp(1rem, 0.75rem + 1.25vw, 1.5rem);
+        font-size: clamp(1.5rem, 1.25rem + 1.25vw, 2rem);
         color: #E02828;
         z-index: 1;
     }
     .twi{
-        width: 7%;
-        position: absolute;
-        top: 18%;
-        left: 35%;
+        width: 3rem;
+        padding-right: clamp(2rem, 1rem + 5vw, 4rem);
+        padding-top: 2rem;
     }
     .insta{
-        width: 7%;
+        width: 3rem;
+        padding-left: clamp(2rem, 1rem + 5vw, 4rem);
+        padding-top: 2rem;
+    }
+    .footer .wrap{
         position: absolute;
-        top: 18%;
-        left: 58%;
+        top: clamp(7rem, 2.5rem + 22.5vw, 16rem);
+        left: 0;
+        right: 0;
+        margin: auto;
+        height: 8rem;
+        text-align: center;
     }
 }
 @media screen and (max-width: 520px) {
