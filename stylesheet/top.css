@@ -97,9 +97,7 @@ nav.open-menu {
         top: clamp(34rem, 30.75rem + 5.41vw, 40rem);
         left: clamp(15rem, 10.125rem + 8.12vw, 24rem);
     }
-    .icon_menu .wrap{
-        background-color: aqua;
-    }
+    
     /*PCmainvisual*/
     .mainvisual_image img{
         display: block;
